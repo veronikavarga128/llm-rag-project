@@ -1,0 +1,39 @@
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Adatok
+data/raw/
+data/processed/
+data/*.db
+data/*.sqlite
+
+# Vektoradatbázis és modellek
+qdrant_storage/
+chroma_db/
+*.faiss
+models/
+.cache/
+*.safetensors
+*.bin
+*.gguf
+
+# Kísérletek nyers kimenetei
+experiments/runs/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,2511 @@
+{
+  "downloaded_at": "2026-10-06T18:04:30+00:00",
+  "source": "hu.wikipedia.org",
+  "license": "CC BY-SA 4.0",
+  "attribution": "Szöveg: Wikipédia, a szabad enciklopédia (hu.wikipedia.org), a cikkek szerzői; CC BY-SA 4.0. Az egyes cikkek URL-je a corpus.jsonl rekordjaiban.",
+  "categories": [
+    "Magyarország várai",
+    "Magyarország kastélyai, palotái"
+  ],
+  "depth": 2,
+  "exclude": [
+    "listái"
+  ],
+  "min_chars": 300,
+  "max_articles": 0,
+  "n_articles": 498,
+  "n_chars_total": 2088294,
+  "skipped_too_short": 9,
+  "articles": [
+    {
+      "title": "Abaúj-vár",
+      "pageid": 1338936,
+      "revid": 29144620
+    },
+    {
+      "title": "Alcsúti kastély",
+      "pageid": 302046,
+      "revid": 28945570
+    },
+    {
+      "title": "Almássy-kúria (Miskolc)",
+      "pageid": 1096755,
+      "revid": 28836698
+    },
+    {
+      "title": "Almásy-kastély (Gyulavári)",
+      "pageid": 532189,
+      "revid": 28131152
+    },
+    {
+      "title": "Almásy-kastély (Tarnaméra)",
+      "pageid": 816682,
+      "revid": 28131158
+    },
+    {
+      "title": "Alsó-Kecskevár",
+      "pageid": 735556,
+      "revid": 26770809
+    },
+    {
+      "title": "Amadé-vár",
+      "pageid": 32595,
+      "revid": 28647785
+    },
+    {
+      "title": "Amadé–Bajzáth–Pappenheim-kastély",
+      "pageid": 551308,
+      "revid": 28287441
+    },
+    {
+      "title": "Andreánszky-kastély",
+      "pageid": 1563568,
+      "revid": 29188479
+    },
+    {
+      "title": "Andrássy-kastély (Betlér)",
+      "pageid": 1318853,
+      "revid": 27331991
+    },
+    {
+      "title": "Andrássy-kastély (Letenye)",
+      "pageid": 792834,
+      "revid": 28877440
+    },
+    {
+      "title": "Andrássy-kastély (Monok)",
+      "pageid": 989608,
+      "revid": 27805022
+    },
+    {
+      "title": "Andrássy-kastély (Tiszadob)",
+      "pageid": 134346,
+      "revid": 29409440
+    },
+    {
+      "title": "Andrássy-kastély (Tóalmás)",
+      "pageid": 643026,
+      "revid": 29399666
+    },
+    {
+      "title": "Antonovits-kúria (Bácsalmás)",
+      "pageid": 1139681,
+      "revid": 29399800
+    },
+    {
+      "title": "Apponyi-kastély (Hőgyész)",
+      "pageid": 424539,
+      "revid": 27974204
+    },
+    {
+      "title": "Apponyi-kastély (Medina)",
+      "pageid": 885343,
+      "revid": 26441009
+    },
+    {
+      "title": "Apponyi-palota (Pozsony)",
+      "pageid": 720421,
+      "revid": 26342101
+    },
+    {
+      "title": "Aynard vára",
+      "pageid": 1127299,
+      "revid": 27790528
+    },
+    {
+      "title": "Babócsa vára",
+      "pageid": 928945,
+      "revid": 29196687
+    },
+    {
+      "title": "Baglyaskő vára",
+      "pageid": 1447534,
+      "revid": 27790584
+    },
+    {
+      "title": "Bajoni földvár",
+      "pageid": 1145299,
+      "revid": 26422221
+    },
+    {
+      "title": "Balassa-kastély",
+      "pageid": 947542,
+      "revid": 26506890
+    },
+    {
+      "title": "Balassagyarmat vára",
+      "pageid": 1579061,
+      "revid": 27376059
+    },
+    {
+      "title": "Balogh-kiskastély",
+      "pageid": 573109,
+      "revid": 27827407
+    },
+    {
+      "title": "Balogh–Esterházy-kastély",
+      "pageid": 1051817,
+      "revid": 26677112
+    },
+    {
+      "title": "Barbakán (Pécs)",
+      "pageid": 271293,
+      "revid": 28512380
+    },
+    {
+      "title": "Barcza-kastély",
+      "pageid": 573625,
+      "revid": 26495460
+    },
+    {
+      "title": "Barthodeiszky-kastély",
+      "pageid": 982929,
+      "revid": 29110148
+    },
+    {
+      "title": "Batthyány-Strattmann-kastély (Intaháza)",
+      "pageid": 1415365,
+      "revid": 27724929
+    },
+    {
+      "title": "Batthyány-kastély (Bicske)",
+      "pageid": 573630,
+      "revid": 27974147
+    },
+    {
+      "title": "Batthyány-kastély (Ikervár)",
+      "pageid": 551373,
+      "revid": 27060290
+    },
+    {
+      "title": "Batthyány-kastély (Zalaszentgrót)",
+      "pageid": 713043,
+      "revid": 27837272
+    },
+    {
+      "title": "Batthyány-kastély (egyértelműsítő lap)",
+      "pageid": 551312,
+      "revid": 23602181
+    },
+    {
+      "title": "Batthyány–Geist-kastély",
+      "pageid": 1748638,
+      "revid": 27276195
+    },
+    {
+      "title": "Beleznay-kastély (Bugyi)",
+      "pageid": 551724,
+      "revid": 26495250
+    },
+    {
+      "title": "Belső-kastély",
+      "pageid": 1799310,
+      "revid": 28804618
+    },
+    {
+      "title": "Bencze-kastély (Dunapataj)",
+      "pageid": 1139101,
+      "revid": 29399795
+    },
+    {
+      "title": "Benevár",
+      "pageid": 224085,
+      "revid": 27790194
+    },
+    {
+      "title": "Bertha-kastély",
+      "pageid": 1916082,
+      "revid": 28131236
+    },
+    {
+      "title": "Berzence vára",
+      "pageid": 868326,
+      "revid": 29190646
+    },
+    {
+      "title": "Bethlen András-kastély",
+      "pageid": 1430674,
+      "revid": 28467569
+    },
+    {
+      "title": "Bethlen Pál-kastély",
+      "pageid": 1430671,
+      "revid": 29242236
+    },
+    {
+      "title": "Bethlen-kastély (Betlenszentmiklós)",
+      "pageid": 1281288,
+      "revid": 29232131
+    },
+    {
+      "title": "Bethlen-kastély (Bonyha)",
+      "pageid": 1432489,
+      "revid": 28148429
+    },
+    {
+      "title": "Bethlen-kastély (Bún)",
+      "pageid": 1432495,
+      "revid": 28131608
+    },
+    {
+      "title": "Bethlen-kastély (Keresd)",
+      "pageid": 703304,
+      "revid": 28131601
+    },
+    {
+      "title": "Bethlen-kastély (Kerlés)",
+      "pageid": 1433489,
+      "revid": 28148941
+    },
+    {
+      "title": "Bethlen-kastély (Árokalja)",
+      "pageid": 1287094,
+      "revid": 28131607
+    },
+    {
+      "title": "Bethlen-kastély (Élesd)",
+      "pageid": 1433371,
+      "revid": 28131609
+    },
+    {
+      "title": "Birinyivár",
+      "pageid": 754271,
+      "revid": 27905471
+    },
+    {
+      "title": "Bogáti-Hajdú-villa",
+      "pageid": 892680,
+      "revid": 28700392
+    },
+    {
+      "title": "Boldogfai Farkas-kúria (Bagod)",
+      "pageid": 1433066,
+      "revid": 28131298
+    },
+    {
+      "title": "Boldogfai Farkas–Lenz-kúria",
+      "pageid": 1433419,
+      "revid": 29411001
+    },
+    {
+      "title": "Boldogkői vár",
+      "pageid": 178068,
+      "revid": 29264561
+    },
+    {
+      "title": "Bolondvár",
+      "pageid": 1106161,
+      "revid": 25899246
+    },
+    {
+      "title": "Bolza-kastély",
+      "pageid": 910502,
+      "revid": 26503635
+    },
+    {
+      "title": "Boncompagni-kastély",
+      "pageid": 615675,
+      "revid": 29399790
+    },
+    {
+      "title": "Borsics-kastély",
+      "pageid": 1540788,
+      "revid": 27208043
+    },
+    {
+      "title": "Borsodi földvár",
+      "pageid": 819010,
+      "revid": 27790477
+    },
+    {
+      "title": "Bory-vár",
+      "pageid": 42198,
+      "revid": 28978136
+    },
+    {
+      "title": "Botka-kastély",
+      "pageid": 402596,
+      "revid": 26476557
+    },
+    {
+      "title": "Brunszvik-kastély",
+      "pageid": 616648,
+      "revid": 28380379
+    },
+    {
+      "title": "Budai Vigadó",
+      "pageid": 518591,
+      "revid": 27714419
+    },
+    {
+      "title": "Budai Várnegyed",
+      "pageid": 21872,
+      "revid": 29319758
+    },
+    {
+      "title": "Budavári Palota",
+      "pageid": 28044,
+      "revid": 29395615
+    },
+    {
+      "title": "Bujáki vár",
+      "pageid": 222080,
+      "revid": 29189718
+    },
+    {
+      "title": "Bács-Kiskun megye kastélyainak és kúriáinak listája",
+      "pageid": 1138695,
+      "revid": 29400741
+    },
+    {
+      "title": "Bánffy-kastély (Bonchida)",
+      "pageid": 616229,
+      "revid": 28523888
+    },
+    {
+      "title": "Bánffy-kastély (Fugad)",
+      "pageid": 1541982,
+      "revid": 28133513
+    },
+    {
+      "title": "Bánffy-kastély (Válaszút)",
+      "pageid": 1347408,
+      "revid": 28191427
+    },
+    {
+      "title": "Bárczay-kastély (Felsőzsolca)",
+      "pageid": 367715,
+      "revid": 26506779
+    },
+    {
+      "title": "Bárczay-kastély (Gomba)",
+      "pageid": 1360504,
+      "revid": 29230415
+    },
+    {
+      "title": "Báthori-várkastély (Ötvöskónyi)",
+      "pageid": 1351520,
+      "revid": 27871580
+    },
+    {
+      "title": "Bátorkő",
+      "pageid": 418379,
+      "revid": 28244741
+    },
+    {
+      "title": "Böre-vár",
+      "pageid": 1766503,
+      "revid": 27880462
+    },
+    {
+      "title": "Búza-kúria",
+      "pageid": 1991783,
+      "revid": 29410952
+    },
+    {
+      "title": "Büdy-vár",
+      "pageid": 224248,
+      "revid": 28675112
+    },
+    {
+      "title": "Citadella (Budapest)",
+      "pageid": 24962,
+      "revid": 29364069
+    },
+    {
+      "title": "Csapody-kastély",
+      "pageid": 1491222,
+      "revid": 27867289
+    },
+    {
+      "title": "Csehvár",
+      "pageid": 1441104,
+      "revid": 29188321
+    },
+    {
+      "title": "Cserépvár",
+      "pageid": 213041,
+      "revid": 26770820
+    },
+    {
+      "title": "Cseszneki vár",
+      "pageid": 178122,
+      "revid": 28256352
+    },
+    {
+      "title": "Csiklingvár",
+      "pageid": 1579045,
+      "revid": 26672081
+    },
+    {
+      "title": "Csillagvár",
+      "pageid": 178066,
+      "revid": 26621624
+    },
+    {
+      "title": "Csobánc vára",
+      "pageid": 222058,
+      "revid": 26674955
+    },
+    {
+      "title": "Csonka-torony (Dunaföldvár)",
+      "pageid": 245143,
+      "revid": 26911739
+    },
+    {
+      "title": "Csorbakő vára",
+      "pageid": 819467,
+      "revid": 27122840
+    },
+    {
+      "title": "Csáky-kastély",
+      "pageid": 2042557,
+      "revid": 29247866
+    },
+    {
+      "title": "Csáky-kastély (Szendrő)",
+      "pageid": 546935,
+      "revid": 26507088
+    },
+    {
+      "title": "Csáky–Hunyady-kastély",
+      "pageid": 502993,
+      "revid": 26679942
+    },
+    {
+      "title": "Csákánydoroszlói várkastély",
+      "pageid": 239747,
+      "revid": 26478398
+    },
+    {
+      "title": "Csókakő vára",
+      "pageid": 178123,
+      "revid": 27583863
+    },
+    {
+      "title": "Csővár vára",
+      "pageid": 222706,
+      "revid": 29188563
+    },
+    {
+      "title": "Czindery-kastély",
+      "pageid": 1352432,
+      "revid": 26947901
+    },
+    {
+      "title": "Cziráky-kastély (Lovasberény)",
+      "pageid": 636327,
+      "revid": 29241075
+    },
+    {
+      "title": "Czuba-Durozier-kastély",
+      "pageid": 428849,
+      "revid": 28722185
+    },
+    {
+      "title": "Damásd vára",
+      "pageid": 1138948,
+      "revid": 29188446
+    },
+    {
+      "title": "Dedevár",
+      "pageid": 489787,
+      "revid": 29242547
+    },
+    {
+      "title": "Degenfeld-Schonburg-kastély (Téglás)",
+      "pageid": 647662,
+      "revid": 29408923
+    },
+    {
+      "title": "Degenfeld-Schonburg-kastély (Ács)",
+      "pageid": 503223,
+      "revid": 26816424
+    },
+    {
+      "title": "Degenfeld-kastély (Baktalórántháza)",
+      "pageid": 1374024,
+      "revid": 29410889
+    },
+    {
+      "title": "Dessewffy-kastély (Gávavencsellő)",
+      "pageid": 919711,
+      "revid": 28687456
+    },
+    {
+      "title": "Dessewffy-kastély (Tiszavasvári)",
+      "pageid": 931011,
+      "revid": 29409538
+    },
+    {
+      "title": "Devecseri vár",
+      "pageid": 180818,
+      "revid": 27059988
+    },
+    {
+      "title": "Dezsővár",
+      "pageid": 1444148,
+      "revid": 26712711
+    },
+    {
+      "title": "Deák-kúria",
+      "pageid": 754227,
+      "revid": 28146607
+    },
+    {
+      "title": "Diósgyőri vár",
+      "pageid": 24553,
+      "revid": 29352040
+    },
+    {
+      "title": "Dobozy-kastély",
+      "pageid": 1175687,
+      "revid": 26521866
+    },
+    {
+      "title": "Dolhai vár",
+      "pageid": 575319,
+      "revid": 20653774
+    },
+    {
+      "title": "Domahidy-hegy",
+      "pageid": 759945,
+      "revid": 26778771
+    },
+    {
+      "title": "Drégely vára",
+      "pageid": 178132,
+      "revid": 29188224
+    },
+    {
+      "title": "Dukai Takách–Bárdossy-kúria",
+      "pageid": 1417703,
+      "revid": 25913884
+    },
+    {
+      "title": "Dédesi vár",
+      "pageid": 402443,
+      "revid": 29410863
+    },
+    {
+      "title": "Déli védelmi rendszer",
+      "pageid": 1604139,
+      "revid": 28179039
+    },
+    {
+      "title": "Ecsedi vár",
+      "pageid": 209599,
+      "revid": 28540352
+    },
+    {
+      "title": "Egervári várkastély",
+      "pageid": 310117,
+      "revid": 27974217
+    },
+    {
+      "title": "Egri vár",
+      "pageid": 178137,
+      "revid": 29242680
+    },
+    {
+      "title": "Egri vár (Pilis)",
+      "pageid": 665275,
+      "revid": 28283268
+    },
+    {
+      "title": "Egyedi-palota",
+      "pageid": 1494880,
+      "revid": 29087033
+    },
+    {
+      "title": "Erdődy-kastély (Doba)",
+      "pageid": 550777,
+      "revid": 27826360
+    },
+    {
+      "title": "Erdődy-kastély (Vép)",
+      "pageid": 227943,
+      "revid": 29254796
+    },
+    {
+      "title": "Erdődy-kastély (egyértelműsítő lap)",
+      "pageid": 228071,
+      "revid": 23003597
+    },
+    {
+      "title": "Essegvár",
+      "pageid": 598567,
+      "revid": 26674959
+    },
+    {
+      "title": "Esterházy-kastély (Csákvár)",
+      "pageid": 900678,
+      "revid": 29113009
+    },
+    {
+      "title": "Esterházy-kastély (Fertőd)",
+      "pageid": 311273,
+      "revid": 29234879
+    },
+    {
+      "title": "Esterházy-kastély (Kismarton)",
+      "pageid": 1675830,
+      "revid": 29255569
+    },
+    {
+      "title": "Esterházy-kastély (Lakompak)",
+      "pageid": 2048793,
+      "revid": 28468951
+    },
+    {
+      "title": "Esterházy-kastély (Pápa)",
+      "pageid": 1235159,
+      "revid": 26864854
+    },
+    {
+      "title": "Esterházy-kastély (Tata)",
+      "pageid": 30396,
+      "revid": 28379492
+    },
+    {
+      "title": "Esterházy-palota (Wallnerstrasse)",
+      "pageid": 1650572,
+      "revid": 27146424
+    },
+    {
+      "title": "Esterházy-paloták (Sopron)",
+      "pageid": 207494,
+      "revid": 28673578
+    },
+    {
+      "title": "Esterházy–Liechtenstein–Zichy-kastély",
+      "pageid": 503286,
+      "revid": 27087714
+    },
+    {
+      "title": "Esztergomi vár",
+      "pageid": 180769,
+      "revid": 29255683
+    },
+    {
+      "title": "Fehérkő vára",
+      "pageid": 245155,
+      "revid": 26621626
+    },
+    {
+      "title": "Fejérkő vára",
+      "pageid": 1452152,
+      "revid": 26709736
+    },
+    {
+      "title": "Fekete-kastély (Balatonederics)",
+      "pageid": 809938,
+      "revid": 26509056
+    },
+    {
+      "title": "Festetics-kastély (Alsóbogát)",
+      "pageid": 1515279,
+      "revid": 27866883
+    },
+    {
+      "title": "Festetics-kastély (Balatonkeresztúr)",
+      "pageid": 1100219,
+      "revid": 27853269
+    },
+    {
+      "title": "Festetics-kastély (Berzence)",
+      "pageid": 1185454,
+      "revid": 27854808
+    },
+    {
+      "title": "Festetics-kastély (Dég)",
+      "pageid": 711063,
+      "revid": 29256405
+    },
+    {
+      "title": "Festetics-kastély (Keszthely)",
+      "pageid": 368976,
+      "revid": 29401388
+    },
+    {
+      "title": "Festetics-kastély (Toponár)",
+      "pageid": 1514163,
+      "revid": 27866899
+    },
+    {
+      "title": "Festetics–Baich-kastély (Szeleste)",
+      "pageid": 1639566,
+      "revid": 29343357
+    },
+    {
+      "title": "Foncière-palota",
+      "pageid": 1608675,
+      "revid": 28946427
+    },
+    {
+      "title": "Forgách-kastély (Szécsény)",
+      "pageid": 684993,
+      "revid": 26637503
+    },
+    {
+      "title": "Forster-kastély",
+      "pageid": 551725,
+      "revid": 26495252
+    },
+    {
+      "title": "Fould-Springer–Wooster-kastély",
+      "pageid": 731099,
+      "revid": 27226880
+    },
+    {
+      "title": "Fried-kastély (Simontornya)",
+      "pageid": 689326,
+      "revid": 26515868
+    },
+    {
+      "title": "Frivaldszky–Mauthner–Pálffy-villa",
+      "pageid": 1536586,
+      "revid": 27417382
+    },
+    {
+      "title": "Fuchs-kastély",
+      "pageid": 1849727,
+      "revid": 28582780
+    },
+    {
+      "title": "Fácános vár",
+      "pageid": 320013,
+      "revid": 27084852
+    },
+    {
+      "title": "Fáy-kúria (Gomba)",
+      "pageid": 1364414,
+      "revid": 29286464
+    },
+    {
+      "title": "Füzéri vár",
+      "pageid": 134152,
+      "revid": 29240345
+    },
+    {
+      "title": "Füzérkő vára",
+      "pageid": 735544,
+      "revid": 26770899
+    },
+    {
+      "title": "Gara-halom",
+      "pageid": 920455,
+      "revid": 26778773
+    },
+    {
+      "title": "Geist-kastély",
+      "pageid": 1747776,
+      "revid": 27825571
+    },
+    {
+      "title": "Gencsy-kastély (Balkány)",
+      "pageid": 228614,
+      "revid": 29409482
+    },
+    {
+      "title": "Gerencsérvár",
+      "pageid": 198837,
+      "revid": 27307697
+    },
+    {
+      "title": "Gerenna-vár",
+      "pageid": 395183,
+      "revid": 29269332
+    },
+    {
+      "title": "Gesztesi vár",
+      "pageid": 180847,
+      "revid": 26967459
+    },
+    {
+      "title": "Grassalkovich-kastély (Baja)",
+      "pageid": 1049283,
+      "revid": 29399793
+    },
+    {
+      "title": "Grassalkovich-kastély (Gödöllő)",
+      "pageid": 614286,
+      "revid": 29255588
+    },
+    {
+      "title": "Grassalkovich-kastély (Hatvan)",
+      "pageid": 739538,
+      "revid": 27974177
+    },
+    {
+      "title": "Grassalkovich-kastély (Pozsony)",
+      "pageid": 260609,
+      "revid": 28610281
+    },
+    {
+      "title": "Gresham-palota",
+      "pageid": 22368,
+      "revid": 28404706
+    },
+    {
+      "title": "Gyulai vár",
+      "pageid": 592636,
+      "revid": 29245889
+    },
+    {
+      "title": "Gyulai várkastély",
+      "pageid": 1902634,
+      "revid": 28440377
+    },
+    {
+      "title": "Gyöngyöspatai vár",
+      "pageid": 1445517,
+      "revid": 26712716
+    },
+    {
+      "title": "Gyöngyössolymos–Óvár",
+      "pageid": 1444549,
+      "revid": 28592377
+    },
+    {
+      "title": "Gyürky–Solymossy-kastély",
+      "pageid": 1163498,
+      "revid": 29230487
+    },
+    {
+      "title": "Gödény-kastély (Ohat)",
+      "pageid": 1738482,
+      "revid": 25377647
+    },
+    {
+      "title": "Haas-palota",
+      "pageid": 1639050,
+      "revid": 27766280
+    },
+    {
+      "title": "Halasy–Horthy-kastély",
+      "pageid": 421160,
+      "revid": 28996343
+    },
+    {
+      "title": "Halomvár",
+      "pageid": 736130,
+      "revid": 26770901
+    },
+    {
+      "title": "Hasznosi vár",
+      "pageid": 323534,
+      "revid": 28534139
+    },
+    {
+      "title": "Hatvany-Deutsch-kastély",
+      "pageid": 789800,
+      "revid": 28549074
+    },
+    {
+      "title": "Hauszmann–Gschwindt-kastély",
+      "pageid": 790714,
+      "revid": 26665815
+    },
+    {
+      "title": "Hegyesdi vár",
+      "pageid": 245145,
+      "revid": 27790209
+    },
+    {
+      "title": "Hernádbűdi vár",
+      "pageid": 1335178,
+      "revid": 26770902
+    },
+    {
+      "title": "Hertelendy-kastély",
+      "pageid": 1360363,
+      "revid": 29012192
+    },
+    {
+      "title": "Hochburg–Lamberg-kastély",
+      "pageid": 968462,
+      "revid": 29129396
+    },
+    {
+      "title": "Hodossy-kastély",
+      "pageid": 687793,
+      "revid": 29408924
+    },
+    {
+      "title": "Hollókői vár",
+      "pageid": 180138,
+      "revid": 27790126
+    },
+    {
+      "title": "Huszár–Purgly-kastély",
+      "pageid": 1657942,
+      "revid": 29187965
+    },
+    {
+      "title": "Hédervári kastély",
+      "pageid": 366464,
+      "revid": 27974173
+    },
+    {
+      "title": "Hölgykő vára",
+      "pageid": 1214975,
+      "revid": 27725946
+    },
+    {
+      "title": "Ilonavár (Ecseg)",
+      "pageid": 1442059,
+      "revid": 29189891
+    },
+    {
+      "title": "Ilonavár (Tömörd)",
+      "pageid": 1442981,
+      "revid": 27584268
+    },
+    {
+      "title": "Inkey-kastély (Iharosberény)",
+      "pageid": 614451,
+      "revid": 28276630
+    },
+    {
+      "title": "Jakab-hegyi őskori földvár",
+      "pageid": 905700,
+      "revid": 27204240
+    },
+    {
+      "title": "Jánossy-kastély",
+      "pageid": 927128,
+      "revid": 26518156
+    },
+    {
+      "title": "Jászberényi palánkvár",
+      "pageid": 1726816,
+      "revid": 27531391
+    },
+    {
+      "title": "József főhercegi palota",
+      "pageid": 1376097,
+      "revid": 29232611
+    },
+    {
+      "title": "Kacskovics–Bánó-kastély",
+      "pageid": 903231,
+      "revid": 27846089
+    },
+    {
+      "title": "Kantavár",
+      "pageid": 1487196,
+      "revid": 26645556
+    },
+    {
+      "title": "Kanázsvár",
+      "pageid": 2262,
+      "revid": 26712718
+    },
+    {
+      "title": "Kaposvár vára",
+      "pageid": 874027,
+      "revid": 27845329
+    },
+    {
+      "title": "Karapancsai kastély",
+      "pageid": 2042453,
+      "revid": 29399803
+    },
+    {
+      "title": "Karátsony-kastély",
+      "pageid": 790865,
+      "revid": 27515828
+    },
+    {
+      "title": "Karátsonyi-palota",
+      "pageid": 1375726,
+      "revid": 29302655
+    },
+    {
+      "title": "Kemend vára",
+      "pageid": 405587,
+      "revid": 28360443
+    },
+    {
+      "title": "Kemény–Bánffy-kastély",
+      "pageid": 275794,
+      "revid": 28133512
+    },
+    {
+      "title": "Kerekvár (Eszteregnye)",
+      "pageid": 1466084,
+      "revid": 27790605
+    },
+    {
+      "title": "Kinizsi-vár",
+      "pageid": 180146,
+      "revid": 29304736
+    },
+    {
+      "title": "Királyi palota (Visegrád)",
+      "pageid": 1149416,
+      "revid": 28379620
+    },
+    {
+      "title": "Kiscelli kastély és parkerdő",
+      "pageid": 300376,
+      "revid": 27693333
+    },
+    {
+      "title": "Kiskastély (Zalaszentgrót)",
+      "pageid": 748078,
+      "revid": 27839910
+    },
+    {
+      "title": "Kisnánai vár",
+      "pageid": 119989,
+      "revid": 27768609
+    },
+    {
+      "title": "Kispréposti palota (Eger)",
+      "pageid": 585760,
+      "revid": 23676521
+    },
+    {
+      "title": "Kisvár (Mátraszőlős)",
+      "pageid": 1452213,
+      "revid": 26709743
+    },
+    {
+      "title": "Kisvárdai vár",
+      "pageid": 180141,
+      "revid": 28867311
+    },
+    {
+      "title": "Kladnigg-kúria",
+      "pageid": 538390,
+      "revid": 28634085
+    },
+    {
+      "title": "Klebelsberg-kastély",
+      "pageid": 1640975,
+      "revid": 27974102
+    },
+    {
+      "title": "Klein-kastély",
+      "pageid": 1503465,
+      "revid": 29392033
+    },
+    {
+      "title": "Klotild paloták",
+      "pageid": 957557,
+      "revid": 27974113
+    },
+    {
+      "title": "Komárom-Esztergom megye kastélyainak és kúriáinak listája",
+      "pageid": 1139467,
+      "revid": 29402762
+    },
+    {
+      "title": "Komáromi erődrendszer",
+      "pageid": 95527,
+      "revid": 29134448
+    },
+    {
+      "title": "Kornis–Rákóczi–Bethlen-kastély",
+      "pageid": 811464,
+      "revid": 28520313
+    },
+    {
+      "title": "Koroknya-vár",
+      "pageid": 1764226,
+      "revid": 28317762
+    },
+    {
+      "title": "Kovachich-kúria (Bácsalmás)",
+      "pageid": 1139703,
+      "revid": 29399801
+    },
+    {
+      "title": "Krasznahorka vára",
+      "pageid": 805458,
+      "revid": 29008017
+    },
+    {
+      "title": "Kula-vár",
+      "pageid": 233997,
+      "revid": 29013243
+    },
+    {
+      "title": "Kutyavár",
+      "pageid": 36362,
+      "revid": 28332332
+    },
+    {
+      "title": "Kácsi vár",
+      "pageid": 734817,
+      "revid": 27794635
+    },
+    {
+      "title": "Kállói vár",
+      "pageid": 916779,
+      "revid": 27619697
+    },
+    {
+      "title": "Kámori vár",
+      "pageid": 1447543,
+      "revid": 27020314
+    },
+    {
+      "title": "Károlyi-kastély (Beregsurány)",
+      "pageid": 571169,
+      "revid": 29409514
+    },
+    {
+      "title": "Károlyi-kastély (Derekegyház)",
+      "pageid": 393975,
+      "revid": 28556068
+    },
+    {
+      "title": "Károlyi-kastély (Fehérvárcsurgó)",
+      "pageid": 620711,
+      "revid": 29256410
+    },
+    {
+      "title": "Károlyi-kastély (Fót)",
+      "pageid": 1624936,
+      "revid": 28208790
+    },
+    {
+      "title": "Károlyi-kastély (Füzérradvány)",
+      "pageid": 1678544,
+      "revid": 28956749
+    },
+    {
+      "title": "Károlyi-kastély (Nagykároly)",
+      "pageid": 569375,
+      "revid": 27146558
+    },
+    {
+      "title": "Károlyi-kastély (Nagymágocs)",
+      "pageid": 442413,
+      "revid": 29408496
+    },
+    {
+      "title": "Károlyi-kastély (egyértelműsítő lap)",
+      "pageid": 319684,
+      "revid": 22108895
+    },
+    {
+      "title": "Károlyi-palota (Belváros)",
+      "pageid": 1379591,
+      "revid": 28950445
+    },
+    {
+      "title": "Károlyi-palota (Szentkirályi utca)",
+      "pageid": 2033481,
+      "revid": 28798749
+    },
+    {
+      "title": "Károlyi–Berchtold-kastély",
+      "pageid": 504408,
+      "revid": 29408499
+    },
+    {
+      "title": "Károlyi–Csekonics-palota",
+      "pageid": 2059021,
+      "revid": 28798892
+    },
+    {
+      "title": "Kási vár",
+      "pageid": 1682789,
+      "revid": 27878540
+    },
+    {
+      "title": "Kégl-kastély",
+      "pageid": 241028,
+      "revid": 29223041
+    },
+    {
+      "title": "Körmendi várkastély",
+      "pageid": 245383,
+      "revid": 29308819
+    },
+    {
+      "title": "Kőszegi vár",
+      "pageid": 180143,
+      "revid": 27790127
+    },
+    {
+      "title": "Laffert-kúria",
+      "pageid": 1944358,
+      "revid": 29178039
+    },
+    {
+      "title": "Lamberg-kastély (Mór)",
+      "pageid": 644866,
+      "revid": 29193144
+    },
+    {
+      "title": "Laszkári-kúria",
+      "pageid": 1928065,
+      "revid": 27278472
+    },
+    {
+      "title": "Latorvár (Sály)",
+      "pageid": 734885,
+      "revid": 27794603
+    },
+    {
+      "title": "Latorvár-tető őskori földvára",
+      "pageid": 1329304,
+      "revid": 28690796
+    },
+    {
+      "title": "Lenz-kastély (Debrecen-Pac)",
+      "pageid": 1433425,
+      "revid": 29409020
+    },
+    {
+      "title": "Leányhegy",
+      "pageid": 1472601,
+      "revid": 28006185
+    },
+    {
+      "title": "Leányvár (Miskolc)",
+      "pageid": 736147,
+      "revid": 26770908
+    },
+    {
+      "title": "Lánchíd Palota",
+      "pageid": 344806,
+      "revid": 29135913
+    },
+    {
+      "title": "Láncos-kastély",
+      "pageid": 644876,
+      "revid": 28635262
+    },
+    {
+      "title": "László-villa",
+      "pageid": 1682124,
+      "revid": 29163607
+    },
+    {
+      "title": "Lónyay-kastély (Bodrogolaszi)",
+      "pageid": 1573566,
+      "revid": 29410433
+    },
+    {
+      "title": "Lónyay-kastély (Tuzsér)",
+      "pageid": 703644,
+      "revid": 29409523
+    },
+    {
+      "title": "L’Huillier–Coburg-kastély",
+      "pageid": 428135,
+      "revid": 29410429
+    },
+    {
+      "title": "Magyarországi kastélyok listája",
+      "pageid": 50065,
+      "revid": 29253740
+    },
+    {
+      "title": "Majláth-kastély (Bakóca)",
+      "pageid": 1759647,
+      "revid": 26444113
+    },
+    {
+      "title": "Majláth-kastély (Patvarc)",
+      "pageid": 1750879,
+      "revid": 26947915
+    },
+    {
+      "title": "Majorvár",
+      "pageid": 736027,
+      "revid": 27790427
+    },
+    {
+      "title": "Malonyai-kastély",
+      "pageid": 916463,
+      "revid": 28262814
+    },
+    {
+      "title": "Margitligeti kastély",
+      "pageid": 1596034,
+      "revid": 28263122
+    },
+    {
+      "title": "Margitszigeti johannita vár",
+      "pageid": 650355,
+      "revid": 27790412
+    },
+    {
+      "title": "Margitszigeti érseki vár",
+      "pageid": 650340,
+      "revid": 27790411
+    },
+    {
+      "title": "Maróthy-kastélykúria",
+      "pageid": 503419,
+      "revid": 28939682
+    },
+    {
+      "title": "Maár-kastély (Pusztakovácsi)",
+      "pageid": 1700403,
+      "revid": 26695862
+    },
+    {
+      "title": "Melczer-kastély",
+      "pageid": 224249,
+      "revid": 26506847
+    },
+    {
+      "title": "Melczer–Mándy-kastély",
+      "pageid": 1790198,
+      "revid": 29410356
+    },
+    {
+      "title": "Migazzi-kastély",
+      "pageid": 1111620,
+      "revid": 28265679
+    },
+    {
+      "title": "Miskolctapolcai vár",
+      "pageid": 1622889,
+      "revid": 26770913
+    },
+    {
+      "title": "Modus Hungaricus",
+      "pageid": 1526608,
+      "revid": 25361306
+    },
+    {
+      "title": "Mohos földvár",
+      "pageid": 1324114,
+      "revid": 27900625
+    },
+    {
+      "title": "Monaky-kastély",
+      "pageid": 1406493,
+      "revid": 28739684
+    },
+    {
+      "title": "Mosonmagyaróvári vár",
+      "pageid": 180145,
+      "revid": 28722988
+    },
+    {
+      "title": "Muzsla-tető vára",
+      "pageid": 1444792,
+      "revid": 27868234
+    },
+    {
+      "title": "Márványkő vára",
+      "pageid": 1440506,
+      "revid": 26685424
+    },
+    {
+      "title": "Márévár",
+      "pageid": 245391,
+      "revid": 29115008
+    },
+    {
+      "title": "Mátra Múzeum",
+      "pageid": 176454,
+      "revid": 26941090
+    },
+    {
+      "title": "Nagyhalomi földvár",
+      "pageid": 753842,
+      "revid": 27790434
+    },
+    {
+      "title": "Nagypréposti palota (Eger)",
+      "pageid": 583146,
+      "revid": 26341579
+    },
+    {
+      "title": "Nagytétényi Kastélymúzeum",
+      "pageid": 15998,
+      "revid": 28891580
+    },
+    {
+      "title": "Nedeczky-kastély",
+      "pageid": 1556540,
+      "revid": 26474541
+    },
+    {
+      "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+      "pageid": 1485585,
+      "revid": 29409658
+    },
+    {
+      "title": "Neszmélyi vár",
+      "pageid": 1442807,
+      "revid": 27868285
+    },
+    {
+      "title": "Neuschloss Palota",
+      "pageid": 2048577,
+      "revid": 28847271
+    },
+    {
+      "title": "New York-palota",
+      "pageid": 128737,
+      "revid": 28837100
+    },
+    {
+      "title": "Nyesettvár",
+      "pageid": 1444565,
+      "revid": 28277269
+    },
+    {
+      "title": "Nyéki vadászkastély",
+      "pageid": 499578,
+      "revid": 28945309
+    },
+    {
+      "title": "Nádasdy-kastély (Nádasdladány)",
+      "pageid": 239789,
+      "revid": 28740787
+    },
+    {
+      "title": "Nógrádi vár",
+      "pageid": 180147,
+      "revid": 29188313
+    },
+    {
+      "title": "Odorvár",
+      "pageid": 733604,
+      "revid": 26774642
+    },
+    {
+      "title": "Oroszlánkő vára (Magyarország)",
+      "pageid": 198824,
+      "revid": 28711743
+    },
+    {
+      "title": "Ozorai Pipó vára",
+      "pageid": 245395,
+      "revid": 28260521
+    },
+    {
+      "title": "Pallavicini-kastély (Pusztaradvány)",
+      "pageid": 272833,
+      "revid": 29409712
+    },
+    {
+      "title": "Pallavicini-kastély (Ópusztaszer)",
+      "pageid": 362451,
+      "revid": 29408490
+    },
+    {
+      "title": "Pannónia Ház",
+      "pageid": 1396280,
+      "revid": 26196724
+    },
+    {
+      "title": "Papp-Ragány–Simala-kastély",
+      "pageid": 1561583,
+      "revid": 29399802
+    },
+    {
+      "title": "Patay-kastély (Abaújszántó)",
+      "pageid": 1573383,
+      "revid": 29409724
+    },
+    {
+      "title": "Patay-kastély (Gomba)",
+      "pageid": 1362075,
+      "revid": 29336585
+    },
+    {
+      "title": "Perczel-kúria (Gomba)",
+      "pageid": 1360114,
+      "revid": 29337518
+    },
+    {
+      "title": "Pesti Vigadó",
+      "pageid": 410041,
+      "revid": 29244417
+    },
+    {
+      "title": "Piarista jószágkormányzósági kastély",
+      "pageid": 2056940,
+      "revid": 28634535
+    },
+    {
+      "title": "Platthy-kastély",
+      "pageid": 931969,
+      "revid": 27510969
+    },
+    {
+      "title": "Podmaniczky-kastély (Aszód)",
+      "pageid": 1137973,
+      "revid": 28629527
+    },
+    {
+      "title": "Podmaniczky-kastély (Kartal)",
+      "pageid": 1651464,
+      "revid": 26947932
+    },
+    {
+      "title": "Podmaniczky-kastély (Verseg-Fenyőharaszt)",
+      "pageid": 395881,
+      "revid": 27495407
+    },
+    {
+      "title": "Podmaniczky–Széchényi-kastély",
+      "pageid": 1416612,
+      "revid": 29303193
+    },
+    {
+      "title": "Podmaniczky–Vigyázó-kastély",
+      "pageid": 578329,
+      "revid": 29339240
+    },
+    {
+      "title": "Pogányvár (Lucfalva)",
+      "pageid": 1447537,
+      "revid": 26709749
+    },
+    {
+      "title": "Pongrácz-kastély",
+      "pageid": 523781,
+      "revid": 26474543
+    },
+    {
+      "title": "Préposti kastély (Tépe)",
+      "pageid": 1719644,
+      "revid": 29409037
+    },
+    {
+      "title": "Prímási palota (Budapest)",
+      "pageid": 1386402,
+      "revid": 29142830
+    },
+    {
+      "title": "Prímási palota (Esztergom)",
+      "pageid": 82874,
+      "revid": 29352412
+    },
+    {
+      "title": "Prónay-kastély (Alsópetény)",
+      "pageid": 784041,
+      "revid": 29188478
+    },
+    {
+      "title": "Puchner-kastély",
+      "pageid": 396225,
+      "revid": 26444115
+    },
+    {
+      "title": "Pácini várkastély",
+      "pageid": 226929,
+      "revid": 27974141
+    },
+    {
+      "title": "Pálffy-kastély",
+      "pageid": 995573,
+      "revid": 27060300
+    },
+    {
+      "title": "Pálffy-kúria (Pölöskefő)",
+      "pageid": 1433559,
+      "revid": 27868509
+    },
+    {
+      "title": "Pántlika kastély",
+      "pageid": 527950,
+      "revid": 26947929
+    },
+    {
+      "title": "Pápai vár",
+      "pageid": 189637,
+      "revid": 27354279
+    },
+    {
+      "title": "Péchy–Zichy-kastély",
+      "pageid": 1573746,
+      "revid": 29409762
+    },
+    {
+      "title": "Pécsi vár",
+      "pageid": 180150,
+      "revid": 27638872
+    },
+    {
+      "title": "Pécskő",
+      "pageid": 1741428,
+      "revid": 26884482
+    },
+    {
+      "title": "Pécsváradi bencés kolostor",
+      "pageid": 245402,
+      "revid": 28617659
+    },
+    {
+      "title": "Péterffy-palota",
+      "pageid": 852535,
+      "revid": 28012780
+    },
+    {
+      "title": "Püspöki kastély (Fertőrákos)",
+      "pageid": 210423,
+      "revid": 29144917
+    },
+    {
+      "title": "Püspöki kastély (Mecseknádasd)",
+      "pageid": 573628,
+      "revid": 29307311
+    },
+    {
+      "title": "Püspöki kastély (Püspökszentlászló)",
+      "pageid": 1610938,
+      "revid": 28566920
+    },
+    {
+      "title": "Püspöki palota (Pécs)",
+      "pageid": 293404,
+      "revid": 28684302
+    },
+    {
+      "title": "Püspöki palota (Vác)",
+      "pageid": 1534651,
+      "revid": 26599385
+    },
+    {
+      "title": "Püspökvár",
+      "pageid": 123977,
+      "revid": 28691371
+    },
+    {
+      "title": "Radó-kastély (Répcelak)",
+      "pageid": 1539860,
+      "revid": 29342344
+    },
+    {
+      "title": "Redl-kastély",
+      "pageid": 550872,
+      "revid": 29399807
+    },
+    {
+      "title": "Regéci vár",
+      "pageid": 66285,
+      "revid": 29145359
+    },
+    {
+      "title": "Reviczky-kastély (Süttő)",
+      "pageid": 796762,
+      "revid": 27841538
+    },
+    {
+      "title": "Rezi vár",
+      "pageid": 247743,
+      "revid": 28194644
+    },
+    {
+      "title": "Rhédey-kastély (Zsáka)",
+      "pageid": 1939393,
+      "revid": 29409142
+    },
+    {
+      "title": "Rottermann-kastély",
+      "pageid": 1641444,
+      "revid": 26478400
+    },
+    {
+      "title": "Ráday-kastély",
+      "pageid": 503069,
+      "revid": 27478636
+    },
+    {
+      "title": "Rákóczi-kastély (Borsi)",
+      "pageid": 1754698,
+      "revid": 29345733
+    },
+    {
+      "title": "Rákóczi-kastély (Felsővadász)",
+      "pageid": 737041,
+      "revid": 26506776
+    },
+    {
+      "title": "Rákóczi–Bornemisza-kastély",
+      "pageid": 1897858,
+      "revid": 29145209
+    },
+    {
+      "title": "Ráró vára",
+      "pageid": 558803,
+      "revid": 29409819
+    },
+    {
+      "title": "Sacelláry-kastély",
+      "pageid": 263237,
+      "revid": 28722174
+    },
+    {
+      "title": "Sajómercsei vár",
+      "pageid": 770284,
+      "revid": 29244749
+    },
+    {
+      "title": "Sajónémeti vár",
+      "pageid": 754309,
+      "revid": 29244750
+    },
+    {
+      "title": "Sajóvelezdi vár",
+      "pageid": 770319,
+      "revid": 29244751
+    },
+    {
+      "title": "Salamon-torony",
+      "pageid": 1588966,
+      "revid": 28957272
+    },
+    {
+      "title": "Salgó vára",
+      "pageid": 224072,
+      "revid": 27790193
+    },
+    {
+      "title": "Salgóvár",
+      "pageid": 226934,
+      "revid": 29347383
+    },
+    {
+      "title": "Savoyai-kastély",
+      "pageid": 1271877,
+      "revid": 28896348
+    },
+    {
+      "title": "Saxlehner-palota",
+      "pageid": 1608672,
+      "revid": 26938953
+    },
+    {
+      "title": "Schell-kastély (Katalinpuszta)",
+      "pageid": 171853,
+      "revid": 28669457
+    },
+    {
+      "title": "Schmidt-villa",
+      "pageid": 455513,
+      "revid": 26533932
+    },
+    {
+      "title": "Schossberger-kastély (Tura)",
+      "pageid": 507285,
+      "revid": 28833127
+    },
+    {
+      "title": "Schöller-kastély",
+      "pageid": 1641438,
+      "revid": 26522107
+    },
+    {
+      "title": "Scitovszky-kúria",
+      "pageid": 1360360,
+      "revid": 29348479
+    },
+    {
+      "title": "Seebach-kastély",
+      "pageid": 1909003,
+      "revid": 28131253
+    },
+    {
+      "title": "Semsey-kastély",
+      "pageid": 1342534,
+      "revid": 28806817
+    },
+    {
+      "title": "Serényi-kastély (Dédestapolcsány)",
+      "pageid": 1092513,
+      "revid": 26506615
+    },
+    {
+      "title": "Serényi-kastély (Putnok)",
+      "pageid": 919689,
+      "revid": 27688997
+    },
+    {
+      "title": "Sibrik-vár",
+      "pageid": 222700,
+      "revid": 29147148
+    },
+    {
+      "title": "Siklósi vár",
+      "pageid": 180192,
+      "revid": 28393230
+    },
+    {
+      "title": "Simay–Holczer-kastély",
+      "pageid": 1059018,
+      "revid": 26464810
+    },
+    {
+      "title": "Simontornyai vár",
+      "pageid": 180181,
+      "revid": 28697761
+    },
+    {
+      "title": "Siroki vár",
+      "pageid": 180191,
+      "revid": 29147355
+    },
+    {
+      "title": "Siskovics–Fischof-kúria",
+      "pageid": 1139508,
+      "revid": 29399798
+    },
+    {
+      "title": "Solymos vára (Magyarország)",
+      "pageid": 226936,
+      "revid": 29409885
+    },
+    {
+      "title": "Solymári vár",
+      "pageid": 238941,
+      "revid": 29346383
+    },
+    {
+      "title": "Somlói vár",
+      "pageid": 118249,
+      "revid": 29399397
+    },
+    {
+      "title": "Somssich-kastély (Kaposújlak)",
+      "pageid": 1530485,
+      "revid": 27866680
+    },
+    {
+      "title": "Soproni vár",
+      "pageid": 180243,
+      "revid": 28929132
+    },
+    {
+      "title": "Stefánia Palota",
+      "pageid": 940051,
+      "revid": 27667470
+    },
+    {
+      "title": "Szabolcsi földvár",
+      "pageid": 226942,
+      "revid": 27790198
+    },
+    {
+      "title": "Szakáts-kastély",
+      "pageid": 1451490,
+      "revid": 26947940
+    },
+    {
+      "title": "Szanda vára",
+      "pageid": 227933,
+      "revid": 28006229
+    },
+    {
+      "title": "Szandavári sáncok",
+      "pageid": 1454489,
+      "revid": 26709756
+    },
+    {
+      "title": "Szarvaskő vára",
+      "pageid": 238943,
+      "revid": 28677996
+    },
+    {
+      "title": "Szarvaskői vár",
+      "pageid": 1177154,
+      "revid": 29216130
+    },
+    {
+      "title": "Szederjesvár",
+      "pageid": 1442997,
+      "revid": 26712728
+    },
+    {
+      "title": "Szegedi vár",
+      "pageid": 1767927,
+      "revid": 27790656
+    },
+    {
+      "title": "Szegedy-kastély (Acsád)",
+      "pageid": 1540781,
+      "revid": 26947947
+    },
+    {
+      "title": "Szemere-kastély",
+      "pageid": 940534,
+      "revid": 29409923
+    },
+    {
+      "title": "Szendrőládi vár",
+      "pageid": 819430,
+      "revid": 28966028
+    },
+    {
+      "title": "Szentmiklóssy–Kubinyi-kastély",
+      "pageid": 692731,
+      "revid": 29189437
+    },
+    {
+      "title": "Szenyéri vár",
+      "pageid": 869872,
+      "revid": 26621632
+    },
+    {
+      "title": "Szerencs vára",
+      "pageid": 227938,
+      "revid": 29409942
+    },
+    {
+      "title": "Szigetvári vár",
+      "pageid": 180249,
+      "revid": 28209316
+    },
+    {
+      "title": "Szigliget-Óvár",
+      "pageid": 1790025,
+      "revid": 26674969
+    },
+    {
+      "title": "Szigligeti Alkotóház",
+      "pageid": 353764,
+      "revid": 28690114
+    },
+    {
+      "title": "Szigligeti vár",
+      "pageid": 247746,
+      "revid": 26854987
+    },
+    {
+      "title": "Szirmay-kastély (Szirmabesenyő)",
+      "pageid": 1555294,
+      "revid": 29409963
+    },
+    {
+      "title": "Szluha-kastély",
+      "pageid": 2016190,
+      "revid": 28967119
+    },
+    {
+      "title": "Szolnoki vár",
+      "pageid": 393000,
+      "revid": 28633113
+    },
+    {
+      "title": "Szombathely vára",
+      "pageid": 324274,
+      "revid": 26685427
+    },
+    {
+      "title": "Sztrahora vára",
+      "pageid": 1447951,
+      "revid": 27727197
+    },
+    {
+      "title": "Szuhay–Károlyi–Andrássy-kúria",
+      "pageid": 1562192,
+      "revid": 29409978
+    },
+    {
+      "title": "Szádvár",
+      "pageid": 96244,
+      "revid": 29358045
+    },
+    {
+      "title": "Széchenyi-kastély (Gencsapáti)",
+      "pageid": 1187830,
+      "revid": 28312886
+    },
+    {
+      "title": "Széchenyi-kastély (Marcali)",
+      "pageid": 1376968,
+      "revid": 27869680
+    },
+    {
+      "title": "Széchenyi-kastély (Nagycenk)",
+      "pageid": 213047,
+      "revid": 26522299
+    },
+    {
+      "title": "Széchenyi-kastély (Peresznye)",
+      "pageid": 542277,
+      "revid": 29409988
+    },
+    {
+      "title": "Széchenyi-kastély (Somogyvár)",
+      "pageid": 267924,
+      "revid": 27060012
+    },
+    {
+      "title": "Szécsényi vár",
+      "pageid": 1741456,
+      "revid": 28510153
+    },
+    {
+      "title": "Széll-kastély (Rátót)",
+      "pageid": 849134,
+      "revid": 28043120
+    },
+    {
+      "title": "Sándor-palota (Budapest)",
+      "pageid": 222470,
+      "revid": 28675017
+    },
+    {
+      "title": "Sándor-palota (Esztergom)",
+      "pageid": 191559,
+      "revid": 29369438
+    },
+    {
+      "title": "Sándor–Metternich-kastély",
+      "pageid": 1085778,
+      "revid": 29241596
+    },
+    {
+      "title": "Sárospataki vár",
+      "pageid": 134296,
+      "revid": 29294751
+    },
+    {
+      "title": "Sárvár (Ecsed)",
+      "pageid": 208663,
+      "revid": 28540273
+    },
+    {
+      "title": "Sárvári vár",
+      "pageid": 180154,
+      "revid": 29264563
+    },
+    {
+      "title": "Sátoraljaújhelyi vár",
+      "pageid": 635894,
+      "revid": 28122537
+    },
+    {
+      "title": "Sípoló-hegy",
+      "pageid": 72593,
+      "revid": 29397261
+    },
+    {
+      "title": "Sümegi vár",
+      "pageid": 180246,
+      "revid": 29399399
+    },
+    {
+      "title": "Tahy-kúria",
+      "pageid": 1420000,
+      "revid": 29188565
+    },
+    {
+      "title": "Taródi-vár",
+      "pageid": 291709,
+      "revid": 29273849
+    },
+    {
+      "title": "Tatai vár",
+      "pageid": 30608,
+      "revid": 28647575
+    },
+    {
+      "title": "Tatárka (Nógrádsáp)",
+      "pageid": 1452221,
+      "revid": 28932948
+    },
+    {
+      "title": "Teleki-kastély (Gernyeszeg)",
+      "pageid": 704344,
+      "revid": 28974350
+    },
+    {
+      "title": "Teleki-kastély (Koltó)",
+      "pageid": 576289,
+      "revid": 28715543
+    },
+    {
+      "title": "Teleki-kastély (Komlód)",
+      "pageid": 1287095,
+      "revid": 28464306
+    },
+    {
+      "title": "Teleki-kastély (Marossárpatak)",
+      "pageid": 1507782,
+      "revid": 26362574
+    },
+    {
+      "title": "Teleki-kastély (Paszmos)",
+      "pageid": 673814,
+      "revid": 28508605
+    },
+    {
+      "title": "Teleki-kastély (Sáromberke)",
+      "pageid": 1137638,
+      "revid": 28039101
+    },
+    {
+      "title": "Teleki-kastély (egyértelműsítő lap)",
+      "pageid": 616258,
+      "revid": 29253743
+    },
+    {
+      "title": "Teleki–Degenfeld-kastély",
+      "pageid": 2082950,
+      "revid": 29255454
+    },
+    {
+      "title": "Teleki–Tisza-kastély",
+      "pageid": 1026242,
+      "revid": 29149923
+    },
+    {
+      "title": "Teleki–Wattay-kastély",
+      "pageid": 621532,
+      "revid": 28745299
+    },
+    {
+      "title": "Tettyei romok",
+      "pageid": 285088,
+      "revid": 29365709
+    },
+    {
+      "title": "Tisza-kastély (Geszt)",
+      "pageid": 1719519,
+      "revid": 27393076
+    },
+    {
+      "title": "Tisza-kastély (Kocsord)",
+      "pageid": 236488,
+      "revid": 29409488
+    },
+    {
+      "title": "Tokaji vár",
+      "pageid": 753710,
+      "revid": 29232711
+    },
+    {
+      "title": "Torkos-palota",
+      "pageid": 135977,
+      "revid": 25650754
+    },
+    {
+      "title": "Trianon Múzeum",
+      "pageid": 397499,
+      "revid": 29150745
+    },
+    {
+      "title": "Tállyai vár",
+      "pageid": 1318904,
+      "revid": 27790549
+    },
+    {
+      "title": "Tátika-vár",
+      "pageid": 249803,
+      "revid": 29369463
+    },
+    {
+      "title": "Törley-kastély (Budapest)",
+      "pageid": 261579,
+      "revid": 28746433
+    },
+    {
+      "title": "Törley-kastély (Galvács)",
+      "pageid": 1232919,
+      "revid": 26506787
+    },
+    {
+      "title": "Törökhányás",
+      "pageid": 1791457,
+      "revid": 28317757
+    },
+    {
+      "title": "Törökvár (Nagykorpád)",
+      "pageid": 1753292,
+      "revid": 27880332
+    },
+    {
+      "title": "Tündérpalota",
+      "pageid": 1376307,
+      "revid": 27687317
+    },
+    {
+      "title": "Upponyi földvár",
+      "pageid": 753906,
+      "revid": 29245195
+    },
+    {
+      "title": "Vadnai vár",
+      "pageid": 770951,
+      "revid": 29232184
+    },
+    {
+      "title": "Vaja várkastélya",
+      "pageid": 227942,
+      "revid": 28675334
+    },
+    {
+      "title": "Vay-kastély (Tiszacsege)",
+      "pageid": 1644510,
+      "revid": 26947950
+    },
+    {
+      "title": "Vay-kastélyok (Golop)",
+      "pageid": 855579,
+      "revid": 28399931
+    },
+    {
+      "title": "Veszprém vára",
+      "pageid": 239741,
+      "revid": 28956064
+    },
+    {
+      "title": "Vigyázó-kastély (Nagyberki)",
+      "pageid": 615654,
+      "revid": 28923238
+    },
+    {
+      "title": "Világosvár",
+      "pageid": 1443512,
+      "revid": 26712729
+    },
+    {
+      "title": "Viosz-kastély (Andráshida)",
+      "pageid": 1433361,
+      "revid": 27868520
+    },
+    {
+      "title": "Visegrádi vár",
+      "pageid": 180255,
+      "revid": 28215431
+    },
+    {
+      "title": "Vitányvár",
+      "pageid": 155451,
+      "revid": 27307699
+    },
+    {
+      "title": "Várak a 11–13. századi Magyarországon",
+      "pageid": 1802266,
+      "revid": 28317464
+    },
+    {
+      "title": "Várkesző vára",
+      "pageid": 1460152,
+      "revid": 26674971
+    },
+    {
+      "title": "Városháza (Székesfehérvár)",
+      "pageid": 1359553,
+      "revid": 28107466
+    },
+    {
+      "title": "Városi Múzeum (Paks)",
+      "pageid": 339952,
+      "revid": 26812765
+    },
+    {
+      "title": "Várpalotai vár",
+      "pageid": 238934,
+      "revid": 27171607
+    },
+    {
+      "title": "Vársziget (Beszterec)",
+      "pageid": 818761,
+      "revid": 26778780
+    },
+    {
+      "title": "Vásárhelyi–Bréda-kastély",
+      "pageid": 1286857,
+      "revid": 27297703
+    },
+    {
+      "title": "Vécsey-kúria (Nyíracsád-Buzitapuszta)",
+      "pageid": 210407,
+      "revid": 27353899
+    },
+    {
+      "title": "Waldbott-kastély",
+      "pageid": 600943,
+      "revid": 26509493
+    },
+    {
+      "title": "Wenckheim-kastély (Békéscsaba-Gerla)",
+      "pageid": 503001,
+      "revid": 26947953
+    },
+    {
+      "title": "Wenckheim-kastély (Póstelek)",
+      "pageid": 1900906,
+      "revid": 29257744
+    },
+    {
+      "title": "Wenckheim-kastély (Szabadkígyós)",
+      "pageid": 503486,
+      "revid": 27974136
+    },
+    {
+      "title": "Wenckheim-kastély (egyértelműsítő lap)",
+      "pageid": 503002,
+      "revid": 25859400
+    },
+    {
+      "title": "Wenckheim-palota",
+      "pageid": 156758,
+      "revid": 27974088
+    },
+    {
+      "title": "Wenckheim-vadászkastély",
+      "pageid": 503007,
+      "revid": 27974128
+    },
+    {
+      "title": "Wenckheim–D’Orsay-kastély",
+      "pageid": 933380,
+      "revid": 26458505
+    },
+    {
+      "title": "Zagyvafő vára",
+      "pageid": 1452218,
+      "revid": 27790586
+    },
+    {
+      "title": "Zalavári vár",
+      "pageid": 1448878,
+      "revid": 26682932
+    },
+    {
+      "title": "Zichy-kastély (Lengyeltóti)",
+      "pageid": 929156,
+      "revid": 26947958
+    },
+    {
+      "title": "Zichy-kastély (Soponya)",
+      "pageid": 716458,
+      "revid": 28273956
+    },
+    {
+      "title": "Zichy-kastély (Vajdaszentivány)",
+      "pageid": 713218,
+      "revid": 26419914
+    },
+    {
+      "title": "Zichy-kastély (Vajta)",
+      "pageid": 941504,
+      "revid": 26464841
+    },
+    {
+      "title": "Zichy-kastély (Zichyújfalu)",
+      "pageid": 695880,
+      "revid": 28094157
+    },
+    {
+      "title": "Zichy-kastély (Zsámbék)",
+      "pageid": 1785865,
+      "revid": 26516627
+    },
+    {
+      "title": "Zichy-kastély (Óbuda)",
+      "pageid": 698657,
+      "revid": 28645067
+    },
+    {
+      "title": "Zichy–Hadik-kastély",
+      "pageid": 697662,
+      "revid": 28826080
+    },
+    {
+      "title": "Zichy–Széchényi-kastély (Káloz)",
+      "pageid": 1062636,
+      "revid": 26947957
+    },
+    {
+      "title": "Zrínyiújvár",
+      "pageid": 246305,
+      "revid": 28955651
+    },
+    {
+      "title": "Zuvár",
+      "pageid": 1441471,
+      "revid": 29188443
+    },
+    {
+      "title": "Zádor-vár",
+      "pageid": 245397,
+      "revid": 29152975
+    },
+    {
+      "title": "Ágasvár",
+      "pageid": 296924,
+      "revid": 26712705
+    },
+    {
+      "title": "Állami Szívkórház",
+      "pageid": 1416969,
+      "revid": 29232263
+    },
+    {
+      "title": "Árpádvár (Dömös)",
+      "pageid": 1441828,
+      "revid": 26690856
+    },
+    {
+      "title": "Árpádvár (Szihalom)",
+      "pageid": 1453272,
+      "revid": 26712708
+    },
+    {
+      "title": "Éleskővár",
+      "pageid": 408890,
+      "revid": 27790340
+    },
+    {
+      "title": "Érseki palota (Kalocsa)",
+      "pageid": 195598,
+      "revid": 29399808
+    },
+    {
+      "title": "Érseki palota (Veszprém)",
+      "pageid": 794644,
+      "revid": 28459164
+    },
+    {
+      "title": "Érseki palotaegyüttes (Eger)",
+      "pageid": 586265,
+      "revid": 27531253
+    },
+    {
+      "title": "Érseki vadászkastély (Hajós)",
+      "pageid": 843861,
+      "revid": 29399804
+    },
+    {
+      "title": "Óbudai királyi vár",
+      "pageid": 650507,
+      "revid": 27693418
+    },
+    {
+      "title": "Ónodi vár",
+      "pageid": 224101,
+      "revid": 29140664
+    },
+    {
+      "title": "Örsúr vára",
+      "pageid": 734866,
+      "revid": 26774648
+    },
+    {
+      "title": "Ösküi vár",
+      "pageid": 1737954,
+      "revid": 26674963
+    },
+    {
+      "title": "Újpalánk vára",
+      "pageid": 1751107,
+      "revid": 26010548
+    },
+    {
+      "title": "Ürményi-kastély",
+      "pageid": 790712,
+      "revid": 26464842
+    }
+  ]
+}

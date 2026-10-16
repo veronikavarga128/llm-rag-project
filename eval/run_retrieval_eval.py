@@ -26,7 +26,11 @@ chunkban sem (pl. chunkhatáron átnyúlik), az a bizonyíték kimarad a chunksz
 A `nincs válasz` kérdéseknél a legjobb találat hasonlósági pontszámát írja ki, hogy később
 eldönthető legyen, használható-e pontszámküszöb a "nem tudom" válaszhoz.
 
-Az eredmény részletesen a --out fájlba kerül (alapból experiments/results/<gyűjtemény>.json).
+Keresési módszer: --retriever dense|bm25|bm25_stem5|hybrid|hybrid_stem5 (lásd src/rag/retrieval.py),
+opcionálisan --rerank (cross-encoder a top-N találaton).
+
+Az eredmény részletesen a --out fájlba kerül. Alapból experiments/results/<gyűjtemény>.json
+(dense, rerank nélkül), egyébként <gyűjtemény>__<retriever>[+rerank].json.
 """
 
 from __future__ import annotations
@@ -257,27 +261,6 @@ def print_unanswerable(records: list[dict], miss_k: int) -> None:
 # -------------------------------------------------------------------- Qdrant / main
 
 
-def load_all_chunks(client, collection: str) -> list[StoredChunk]:
-    chunks: list[StoredChunk] = []
-    offset = None
-    while True:
-        points, offset = client.scroll(
-            collection_name=collection, limit=500, offset=offset, with_payload=True, with_vectors=False
-        )
-        for p in points:
-            payload = p.payload
-            chunks.append(
-                StoredChunk(
-                    doc_id=payload["doc_id"],
-                    title=payload["title"],
-                    chunk_index=payload["chunk_index"],
-                    text_norm=norm(payload["text"]),
-                )
-            )
-        if offset is None:
-            return chunks
-
-
 def index_by_title(chunks: list[StoredChunk]) -> dict[str, list[StoredChunk]]:
     by_title: dict[str, list[StoredChunk]] = defaultdict(list)
     for chunk in chunks:
@@ -289,16 +272,37 @@ def parse_ks(value: str) -> tuple[int, ...]:
     return tuple(sorted({int(x) for x in value.split(",") if x.strip()}))
 
 
+def default_out_path(collection: str, retriever: str, rerank: bool) -> Path:
+    if retriever == "dense" and not rerank:
+        return RESULTS_DIR / f"{collection}.json"
+    return RESULTS_DIR / f"{collection}__{retriever}{'+rerank' if rerank else ''}.json"
+
+
 def main() -> None:
     from qdrant_client import QdrantClient
 
     from rag.config import get_settings
-    from rag.embedding import Embedder
-    from rag.search import dense_search
+    from rag.retrieval import (
+        DEFAULT_RERANK_MODEL,
+        RETRIEVER_NAMES,
+        DenseRetriever,
+        IndexedChunk,
+        Reranker,
+        RerankedRetriever,
+        build_retriever,
+        fetch_chunks,
+    )
 
     settings = get_settings()
     parser = argparse.ArgumentParser(description="Retrieval-kiértékelés Qdrant gyűjteményen.")
     parser.add_argument("--collection", default=settings.collection)
+    parser.add_argument("--retriever", choices=RETRIEVER_NAMES, default="dense",
+                        help="keresési módszer (alapból: dense)")
+    parser.add_argument("--rerank", action="store_true",
+                        help="a top-N találat újrarendezése cross-encoderrel")
+    parser.add_argument("--rerank-model", default=DEFAULT_RERANK_MODEL)
+    parser.add_argument("--rerank-top-n", type=int, default=20,
+                        help="ennyi találatot rendez újra a reranker (alapból: 20)")
     parser.add_argument("--questions", type=Path, default=QUESTIONS)
     parser.add_argument("--k", type=int, default=10, help="ennyi találatot kér le kérdésenként")
     parser.add_argument("--ks", type=parse_ks, default=DEFAULT_KS, help="a Recall@k értékei, pl. 1,3,5,10")
@@ -308,25 +312,50 @@ def main() -> None:
     ks: tuple[int, ...] = args.ks
     if not ks or max(ks) > args.k:
         sys.exit(f"A --ks értékei nem lehetnek nagyobbak a --k értékénél ({args.k}).")
+    if args.rerank and args.rerank_top_n < args.k:
+        sys.exit(f"A --rerank-top-n ({args.rerank_top_n}) nem lehet kisebb a --k értékénél ({args.k}).")
 
     client = QdrantClient(url=settings.qdrant_url)
-    if not client.collection_exists(args.collection):
+    try:
+        exists = client.collection_exists(args.collection)
+    except Exception as exc:
+        sys.exit(
+            f"Nem érem el a Qdrantot ({settings.qdrant_url}): {type(exc).__name__}.\n"
+            "Indítsd el a Docker Desktopot, majd a repó gyökeréből: docker compose up -d"
+        )
+    if not exists:
         sys.exit(f"A '{args.collection}' gyűjtemény nem létezik. Előbb: python -m rag.ingest --recreate")
 
     with args.questions.open(encoding="utf-8") as f:
         questions = [json.loads(line) for line in f if line.strip()]
 
-    chunks = load_all_chunks(client, args.collection)
+    indexed: list[IndexedChunk] = fetch_chunks(client, args.collection)
+    chunks = [StoredChunk(c.doc_id, c.title, c.chunk_index, norm(c.text)) for c in indexed]
     chunks_by_title = index_by_title(chunks)
     avg_len = mean([len(c.text_norm) for c in chunks])
     print(f"Gyűjtemény: {args.collection} ({len(chunks)} chunk, átlag {avg_len:.0f} karakter)")
-    print(f"Embedding-modell: {settings.embedding_model}")
 
-    embedder = Embedder(settings.embedding_model)
+    def dense_factory():
+        from rag.embedding import Embedder
+
+        print(f"Embedding-modell: {settings.embedding_model}")
+        return DenseRetriever(client, Embedder(settings.embedding_model), args.collection)
+
+    retriever = build_retriever(args.retriever, indexed, dense_factory)
+    label = args.retriever
+    if args.rerank:
+        print(f"Reranker: {args.rerank_model} (top-{args.rerank_top_n} újrarendezése)")
+        retriever = RerankedRetriever(
+            retriever, Reranker(args.rerank_model), top_n=args.rerank_top_n
+        )
+        label += " + rerank"
+    print(f"Keresési módszer: {label}")
 
     def retrieve(question: str, k: int) -> list[Result]:
-        hits = dense_search(client, embedder, args.collection, question, k)
-        return [Result(h.doc_id, h.title, h.section, h.chunk_index, h.score) for h in hits]
+        return [
+            Result(h.doc_id, h.title, h.section, h.chunk_index, h.score)
+            for h in retriever.search(question, k)
+        ]
 
     records = evaluate(questions, chunks_by_title, retrieve, args.k, ks)
 
@@ -346,11 +375,15 @@ def main() -> None:
     print_misses(records, miss_k)
     print_unanswerable(records, miss_k)
 
-    out = args.out or RESULTS_DIR / f"{args.collection}.json"
+    out = args.out or default_out_path(args.collection, args.retriever, args.rerank)
     out.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "created_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
         "collection": args.collection,
+        "retriever": args.retriever,
+        "rerank": args.rerank,
+        "rerank_model": args.rerank_model if args.rerank else None,
+        "rerank_top_n": args.rerank_top_n if args.rerank else None,
         "embedding_model": settings.embedding_model,
         "n_chunks": len(chunks),
         "avg_chunk_chars": round(avg_len, 1),

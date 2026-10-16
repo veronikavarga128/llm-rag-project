@@ -1,0 +1,4433 @@
+{
+  "created_at": "2026-10-13T16:55:55+00:00",
+  "collection": "corpus",
+  "retriever": "hybrid_stem5",
+  "rerank": false,
+  "rerank_model": null,
+  "rerank_top_n": null,
+  "embedding_model": "intfloat/multilingual-e5-small",
+  "n_chunks": 5419,
+  "avg_chunk_chars": 410.5,
+  "k": 10,
+  "ks": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "summary": {
+    "összes (válaszolható)": {
+      "n": 44,
+      "article": {
+        "n": 44,
+        "R@1": 0.9507575757575758,
+        "R@3": 0.981060606060606,
+        "R@5": 1.0,
+        "R@10": 1.0,
+        "MRR": 1.0
+      },
+      "chunk": {
+        "n": 44,
+        "R@1": 0.8257575757575758,
+        "R@3": 0.9128787878787878,
+        "R@5": 0.9545454545454546,
+        "R@10": 0.9886363636363636,
+        "MRR": 0.9042568542568542
+      }
+    },
+    "típus: tény": {
+      "n": 40,
+      "article": {
+        "n": 40,
+        "R@1": 1.0,
+        "R@3": 1.0,
+        "R@5": 1.0,
+        "R@10": 1.0,
+        "MRR": 1.0
+      },
+      "chunk": {
+        "n": 40,
+        "R@1": 0.875,
+        "R@3": 0.95,
+        "R@5": 0.975,
+        "R@10": 1.0,
+        "MRR": 0.9161111111111111
+      }
+    },
+    "típus: több cikk": {
+      "n": 4,
+      "article": {
+        "n": 4,
+        "R@1": 0.4583333333333333,
+        "R@3": 0.7916666666666666,
+        "R@5": 1.0,
+        "R@10": 1.0,
+        "MRR": 1.0
+      },
+      "chunk": {
+        "n": 4,
+        "R@1": 0.3333333333333333,
+        "R@3": 0.5416666666666666,
+        "R@5": 0.75,
+        "R@10": 0.875,
+        "MRR": 0.7857142857142857
+      }
+    },
+    "hely: ismert": {
+      "n": 23,
+      "article": {
+        "n": 23,
+        "R@1": 0.9565217391304348,
+        "R@3": 1.0,
+        "R@5": 1.0,
+        "R@10": 1.0,
+        "MRR": 1.0
+      },
+      "chunk": {
+        "n": 23,
+        "R@1": 0.717391304347826,
+        "R@3": 0.8695652173913043,
+        "R@5": 0.9130434782608695,
+        "R@10": 0.9782608695652174,
+        "MRR": 0.8168391994478952
+      }
+    },
+    "hely: kevésbé ismert": {
+      "n": 21,
+      "article": {
+        "n": 21,
+        "R@1": 0.9444444444444444,
+        "R@3": 0.9603174603174603,
+        "R@5": 1.0,
+        "R@10": 1.0,
+        "MRR": 1.0
+      },
+      "chunk": {
+        "n": 21,
+        "R@1": 0.9444444444444444,
+        "R@3": 0.9603174603174603,
+        "R@5": 1.0,
+        "R@10": 1.0,
+        "MRR": 1.0
+      }
+    }
+  },
+  "unfindable_evidence": [],
+  "per_question": [
+    {
+      "id": "q001",
+      "question": "Milyen anyagból, kőzetből építették az egri vár kőfalait?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Egri vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Egri vár",
+          "section": "A vár története",
+          "chunk_index": 4,
+          "score": 0.0328
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár története",
+          "chunk_index": 3,
+          "score": 0.0311
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár története",
+          "chunk_index": 5,
+          "score": 0.029
+        },
+        {
+          "title": "Egri vár (Pilis)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.029
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár története",
+          "chunk_index": 2,
+          "score": 0.0285
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár története",
+          "chunk_index": 1,
+          "score": 0.0281
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár felújítása a Nemzeti Várprogram keretében",
+          "chunk_index": 22,
+          "score": 0.0276
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár története",
+          "chunk_index": 15,
+          "score": 0.0256
+        },
+        {
+          "title": "Egri vár",
+          "section": "Épületek",
+          "chunk_index": 31,
+          "score": 0.0252
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Eger, Egri vár (Heves vármegye)",
+          "chunk_index": 194,
+          "score": 0.0251
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q002",
+      "question": "Hány helyiségből áll a keszthelyi Festetics-kastély?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Festetics-kastély (Keszthely)"
+      ],
+      "related_titles": [],
+      "top1_score": 0.031746031746031744,
+      "top": [
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "A Helikon könyvtár",
+          "chunk_index": 23,
+          "score": 0.0317
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0315
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0313
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "A kastélypark",
+          "chunk_index": 37,
+          "score": 0.0308
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Főúri enteriőrkiállítás",
+          "chunk_index": 26,
+          "score": 0.0303
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0301
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "A Helikon könyvtár",
+          "chunk_index": 24,
+          "score": 0.028
+        },
+        {
+          "title": "Festetics-kastély (Balatonkeresztúr)",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.0278
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 6,
+          "score": 0.0277
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0272
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 0.3333333333333333
+    },
+    {
+      "id": "q003",
+      "question": "Ki tervezte a keszthelyi Festetics-kastély 1883–87 közötti neobarokk bővítését?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Festetics-kastély (Keszthely)"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0328
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0323
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "A Helikon könyvtár",
+          "chunk_index": 23,
+          "score": 0.0297
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Keszthely, Festetics-kastély",
+          "chunk_index": 54,
+          "score": 0.0295
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "A Helikon könyvtár",
+          "chunk_index": 24,
+          "score": 0.0292
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 15,
+          "score": 0.0292
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Keszthely, Festetics-kastély",
+          "chunk_index": 55,
+          "score": 0.0286
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 21,
+          "score": 0.0277
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 17,
+          "score": 0.0274
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "Története",
+          "chunk_index": 16,
+          "score": 0.0272
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q004",
+      "question": "Milyen korábbi épület helyén épült fel a fertődi Esterházy-kastély?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Esterházy-kastély (Fertőd)"
+      ],
+      "related_titles": [],
+      "top1_score": 0.032018442622950824,
+      "top": [
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.032
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.032
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0315
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Fertőd, Esterházy-kastély",
+          "chunk_index": 30,
+          "score": 0.0301
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.0293
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "A kastély belső részei",
+          "chunk_index": 17,
+          "score": 0.0292
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "Jelene",
+          "chunk_index": 5,
+          "score": 0.0291
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Fertőd, Esterházy-kastély",
+          "chunk_index": 31,
+          "score": 0.0278
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "A kastély leírása",
+          "chunk_index": 10,
+          "score": 0.0269
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "A kastély belső részei",
+          "chunk_index": 18,
+          "score": 0.0267
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 0.5
+    },
+    {
+      "id": "q005",
+      "question": "Melyik két híres európai palotához hasonlítják a fertődi Esterházy-kastélyt?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Esterházy-kastély (Fertőd)"
+      ],
+      "related_titles": [],
+      "top1_score": 0.032018442622950824,
+      "top": [
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.032
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "A kastély belső részei",
+          "chunk_index": 18,
+          "score": 0.0313
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Fertőd, Esterházy-kastély",
+          "chunk_index": 30,
+          "score": 0.0308
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "A kastély leírása",
+          "chunk_index": 10,
+          "score": 0.0289
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Fertőd, Esterházy-kastély",
+          "chunk_index": 33,
+          "score": 0.0289
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0286
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "A kastélypark",
+          "chunk_index": 23,
+          "score": 0.0275
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Fertőd, Esterházy-kastély",
+          "chunk_index": 29,
+          "score": 0.0273
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.0271
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.027
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 1.0
+      },
+      "chunk_rr": 0.1111111111111111
+    },
+    {
+      "id": "q006",
+      "question": "Ki tervei alapján kezdték építeni a gödöllői Grassalkovich-kastélyt?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Grassalkovich-kastély (Gödöllő)"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 2,
+          "score": 0.0323
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 1,
+          "score": 0.031
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 5,
+          "score": 0.0308
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 3,
+          "score": 0.0292
+        },
+        {
+          "title": "Podmaniczky-kastély (Aszód)",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.029
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 9,
+          "score": 0.029
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 4,
+          "score": 0.0286
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 6,
+          "score": 0.0284
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "Lovarda",
+          "chunk_index": 14,
+          "score": 0.0282
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 0.5
+    },
+    {
+      "id": "q007",
+      "question": "Hány fő befogadására alkalmas a gödöllői kastély színházterme?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Grassalkovich-kastély (Gödöllő)"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 4,
+          "score": 0.0328
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0304
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 1,
+          "score": 0.0274
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Tata, Esterházy-kastély",
+          "chunk_index": 149,
+          "score": 0.023
+        },
+        {
+          "title": "Egervári várkastély",
+          "section": "Története",
+          "chunk_index": 6,
+          "score": 0.0161
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Tiszadob, Andrássy-kastély",
+          "chunk_index": 167,
+          "score": 0.0159
+        },
+        {
+          "title": "Pesti Vigadó",
+          "section": "Élet a pusztítás árnyékában",
+          "chunk_index": 32,
+          "score": 0.0159
+        },
+        {
+          "title": "New York-palota",
+          "section": "Története",
+          "chunk_index": 13,
+          "score": 0.0156
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Nádasdladány, Nádasdy-kastély",
+          "chunk_index": 67,
+          "score": 0.0156
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Tata, Esterházy-kastély",
+          "chunk_index": 129,
+          "score": 0.0154
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q008",
+      "question": "Milyen alakú lakótornyot építtetett IV. Béla Visegrádon, amelyet a néphagyomány később Salamon-toronynak nevezett el?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Visegrádi vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Visegrádi vár",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0328
+        },
+        {
+          "title": "Salamon-torony",
+          "section": "Leírása",
+          "chunk_index": 0,
+          "score": 0.0318
+        },
+        {
+          "title": "Salamon-torony",
+          "section": "Nevének eredete",
+          "chunk_index": 1,
+          "score": 0.0313
+        },
+        {
+          "title": "Salamon-torony",
+          "section": "A feltárás",
+          "chunk_index": 5,
+          "score": 0.031
+        },
+        {
+          "title": "Salamon-torony",
+          "section": "Nevének eredete",
+          "chunk_index": 2,
+          "score": 0.031
+        },
+        {
+          "title": "Salamon-torony",
+          "section": "2018–2025-ben",
+          "chunk_index": 6,
+          "score": 0.03
+        },
+        {
+          "title": "Salamon-torony",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0292
+        },
+        {
+          "title": "Salamon-torony",
+          "section": "A feltárás",
+          "chunk_index": 4,
+          "score": 0.0288
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Sümeg, Sümegi vár (Veszprém vármegye)",
+          "chunk_index": 279,
+          "score": 0.0275
+        },
+        {
+          "title": "Visegrádi vár",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0274
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q009",
+      "question": "Ki építtette fel a szigetvári várat 1420 körül?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Szigetvári vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Szigetvári vár",
+          "section": "A vár története",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Szigetvári vár (Baranya vármegye)",
+          "chunk_index": 302,
+          "score": 0.0284
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Szigetvári vár (Baranya vármegye)",
+          "chunk_index": 294,
+          "score": 0.0278
+        },
+        {
+          "title": "Szigetvári vár",
+          "section": "A vár története",
+          "chunk_index": 3,
+          "score": 0.0274
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Szigetvári vár (Baranya vármegye)",
+          "chunk_index": 303,
+          "score": 0.0269
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Andrássy-kastély",
+          "chunk_index": 111,
+          "score": 0.0265
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Szigetvári vár (Baranya vármegye)",
+          "chunk_index": 296,
+          "score": 0.025
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Szigetvári vár (Baranya vármegye)",
+          "chunk_index": 301,
+          "score": 0.0241
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Szigetvári vár (Baranya vármegye)",
+          "chunk_index": 304,
+          "score": 0.0232
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Andrássy-kastély",
+          "chunk_index": 112,
+          "score": 0.0214
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q010",
+      "question": "Ki irányításával modernizálták a szigetvári erődítményt 1558 és 1560 között?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Szigetvári vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03252247488101534,
+      "top": [
+        {
+          "title": "Szigetvári vár",
+          "section": "A vár története",
+          "chunk_index": 3,
+          "score": 0.0325
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Andrássy-kastély",
+          "chunk_index": 111,
+          "score": 0.0299
+        },
+        {
+          "title": "Szigetvári vár",
+          "section": "A vár története",
+          "chunk_index": 0,
+          "score": 0.0299
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Szigetvári vár (Baranya vármegye)",
+          "chunk_index": 301,
+          "score": 0.028
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Szigetvári vár (Baranya vármegye)",
+          "chunk_index": 295,
+          "score": 0.0278
+        },
+        {
+          "title": "Gyulai vár",
+          "section": "Építésétől a török uralomig (1405–1566)",
+          "chunk_index": 11,
+          "score": 0.0273
+        },
+        {
+          "title": "Szigetvári vár",
+          "section": "A vár története",
+          "chunk_index": 6,
+          "score": 0.0262
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Szigetvári vár (Baranya vármegye)",
+          "chunk_index": 299,
+          "score": 0.0253
+        },
+        {
+          "title": "Modus Hungaricus",
+          "section": "E technikával készült hazai várak",
+          "chunk_index": 9,
+          "score": 0.0241
+        },
+        {
+          "title": "Szegedi vár",
+          "section": "Szegedi várbörtön",
+          "chunk_index": 8,
+          "score": 0.0227
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q011",
+      "question": "Melyik hegyen áll a boldogkői vár?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Boldogkői vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03252247488101534,
+      "top": [
+        {
+          "title": "Boldogkői vár",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0325
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "Elhelyezkedése",
+          "chunk_index": 6,
+          "score": 0.0325
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "Természeti környezete",
+          "chunk_index": 60,
+          "score": 0.03
+        },
+        {
+          "title": "Hollókői vár",
+          "section": "A vár története",
+          "chunk_index": 0,
+          "score": 0.0285
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "Érdekességek",
+          "chunk_index": 69,
+          "score": 0.028
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "Öregtorony",
+          "chunk_index": 50,
+          "score": 0.0268
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "Érdekességek",
+          "chunk_index": 68,
+          "score": 0.0263
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "Keletkezése",
+          "chunk_index": 9,
+          "score": 0.0261
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "A kuruc időkben",
+          "chunk_index": 34,
+          "score": 0.0245
+        },
+        {
+          "title": "Hegyesdi vár",
+          "section": "Megjelenése az irodalomban",
+          "chunk_index": 13,
+          "score": 0.023
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q012",
+      "question": "Mire használták a jezsuiták a 18. században a boldogkői várromot?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Boldogkői vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Boldogkői vár",
+          "section": "",
+          "chunk_index": 3,
+          "score": 0.0328
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "",
+          "chunk_index": 2,
+          "score": 0.0323
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "A vár lerombolása és utóélete",
+          "chunk_index": 35,
+          "score": 0.0317
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "A kuruc időkben",
+          "chunk_index": 32,
+          "score": 0.0286
+        },
+        {
+          "title": "Hasznosi vár",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0258
+        },
+        {
+          "title": "Péchy–Zichy-kastély",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0251
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "A kuruc időkben",
+          "chunk_index": 31,
+          "score": 0.0249
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "Csonka bástya",
+          "chunk_index": 46,
+          "score": 0.0248
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "Elhelyezkedése",
+          "chunk_index": 5,
+          "score": 0.0248
+        },
+        {
+          "title": "Neszmélyi vár",
+          "section": "Leírása",
+          "chunk_index": 3,
+          "score": 0.0232
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q013",
+      "question": "Ki építtette a tatai várat, és mikor?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Tatai vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.031099324975891997,
+      "top": [
+        {
+          "title": "Tatai vár",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0311
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 8,
+          "score": 0.0306
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 6,
+          "score": 0.0286
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború után",
+          "chunk_index": 18,
+          "score": 0.0269
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 15,
+          "score": 0.0266
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 12,
+          "score": 0.0261
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 3,
+          "score": 0.0259
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Sümeg, Sümegi vár (Veszprém vármegye)",
+          "chunk_index": 274,
+          "score": 0.0256
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 4,
+          "score": 0.0252
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 14,
+          "score": 0.0235
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q014",
+      "question": "Mikor említi először oklevél a hollókői várat, és milyen néven?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Hollókői vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03252247488101534,
+      "top": [
+        {
+          "title": "Hollókői vár",
+          "section": "A vár története",
+          "chunk_index": 1,
+          "score": 0.0325
+        },
+        {
+          "title": "Hölgykő vára",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.029
+        },
+        {
+          "title": "Várkesző vára",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.029
+        },
+        {
+          "title": "Hollókői vár",
+          "section": "A vár története",
+          "chunk_index": 3,
+          "score": 0.028
+        },
+        {
+          "title": "Bátorkő",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0278
+        },
+        {
+          "title": "Fácános vár",
+          "section": "A vár története",
+          "chunk_index": 1,
+          "score": 0.0265
+        },
+        {
+          "title": "Hollókői vár",
+          "section": "A vár története",
+          "chunk_index": 10,
+          "score": 0.0257
+        },
+        {
+          "title": "Kaposvár vára",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0255
+        },
+        {
+          "title": "Csobánc vára",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0245
+        },
+        {
+          "title": "Borsodi földvár",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0244
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q015",
+      "question": "Mi a neve a sümegi vár 1553-ban emelt, több emeletes, vastag falú védőművének?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Sümegi vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Sümegi vár",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0328
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Sümeg, Sümegi vár (Veszprém vármegye)",
+          "chunk_index": 275,
+          "score": 0.0313
+        },
+        {
+          "title": "Sümegi vár",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0306
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Sümeg, Sümegi vár (Veszprém vármegye)",
+          "chunk_index": 284,
+          "score": 0.0288
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Sümeg, Sümegi vár (Veszprém vármegye)",
+          "chunk_index": 283,
+          "score": 0.0283
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Sümeg, Sümegi vár (Veszprém vármegye)",
+          "chunk_index": 273,
+          "score": 0.0278
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Sümeg, Sümegi vár (Veszprém vármegye)",
+          "chunk_index": 280,
+          "score": 0.0276
+        },
+        {
+          "title": "Sümegi vár",
+          "section": "Története",
+          "chunk_index": 5,
+          "score": 0.0274
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Sümeg, Sümegi vár (Veszprém vármegye)",
+          "chunk_index": 274,
+          "score": 0.0272
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Sümeg, Sümegi vár (Veszprém vármegye)",
+          "chunk_index": 281,
+          "score": 0.0271
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q016",
+      "question": "Melyik évben vált nemzeti emlékhellyé a nagycenki Széchenyi-kastély?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Széchenyi-kastély (Nagycenk)"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Széchenyi-kastély (Nagycenk)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Nagycenk, Széchenyi-kastély",
+          "chunk_index": 79,
+          "score": 0.032
+        },
+        {
+          "title": "Széchenyi-kastély (Nagycenk)",
+          "section": "Látnivalók",
+          "chunk_index": 24,
+          "score": 0.032
+        },
+        {
+          "title": "Széchenyi-kastély (Nagycenk)",
+          "section": "Látnivalók",
+          "chunk_index": 19,
+          "score": 0.031
+        },
+        {
+          "title": "Széchenyi-kastély (Nagycenk)",
+          "section": "Látnivalók",
+          "chunk_index": 27,
+          "score": 0.0294
+        },
+        {
+          "title": "Széchenyi-kastély (Nagycenk)",
+          "section": "A kastély építése",
+          "chunk_index": 7,
+          "score": 0.0279
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Nagycenk, Széchenyi-kastély",
+          "chunk_index": 87,
+          "score": 0.0273
+        },
+        {
+          "title": "Széchenyi-kastély (Nagycenk)",
+          "section": "A kastély építése",
+          "chunk_index": 18,
+          "score": 0.0268
+        },
+        {
+          "title": "Széchenyi-kastély (Nagycenk)",
+          "section": "A kastély építése",
+          "chunk_index": 12,
+          "score": 0.0268
+        },
+        {
+          "title": "Széchenyi-kastély (Nagycenk)",
+          "section": "A kastély építése",
+          "chunk_index": 8,
+          "score": 0.0263
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q017",
+      "question": "Milyen épület állt a Gellért-hegyen a Citadella előtt, a törökök palánkvárának helyén?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Citadella (Budapest)"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Citadella (Budapest)",
+          "section": "Előzményei",
+          "chunk_index": 1,
+          "score": 0.0328
+        },
+        {
+          "title": "Citadella (Budapest)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.032
+        },
+        {
+          "title": "Citadella (Budapest)",
+          "section": "Előzményei",
+          "chunk_index": 3,
+          "score": 0.032
+        },
+        {
+          "title": "Citadella (Budapest)",
+          "section": "Építése és hadászati szerepe",
+          "chunk_index": 4,
+          "score": 0.0312
+        },
+        {
+          "title": "Citadella (Budapest)",
+          "section": "Előzményei",
+          "chunk_index": 2,
+          "score": 0.0295
+        },
+        {
+          "title": "Esztergomi vár",
+          "section": "Védművei",
+          "chunk_index": 12,
+          "score": 0.0294
+        },
+        {
+          "title": "Citadella (Budapest)",
+          "section": "Építése és hadászati szerepe",
+          "chunk_index": 5,
+          "score": 0.0294
+        },
+        {
+          "title": "Gyulai várkastély",
+          "section": "Előtörténet",
+          "chunk_index": 2,
+          "score": 0.0283
+        },
+        {
+          "title": "Jászberényi palánkvár",
+          "section": "A palánk",
+          "chunk_index": 11,
+          "score": 0.0259
+        },
+        {
+          "title": "Drégely vára",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0244
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 0.2
+    },
+    {
+      "id": "q018",
+      "question": "Ki volt a kőszegi vár várkapitánya, amikor Szulejmán szultán 1532-ben megostromolta?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Kőszegi vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Kőszegi vár",
+          "section": "A vár története",
+          "chunk_index": 3,
+          "score": 0.0328
+        },
+        {
+          "title": "Kőszegi vár",
+          "section": "A vár története",
+          "chunk_index": 4,
+          "score": 0.0301
+        },
+        {
+          "title": "Kőszegi vár",
+          "section": "A vár története",
+          "chunk_index": 0,
+          "score": 0.0298
+        },
+        {
+          "title": "Kőszegi vár",
+          "section": "A vár története",
+          "chunk_index": 5,
+          "score": 0.0297
+        },
+        {
+          "title": "Szigetvári vár",
+          "section": "A vár története",
+          "chunk_index": 2,
+          "score": 0.028
+        },
+        {
+          "title": "Budai Várnegyed",
+          "section": "Története",
+          "chunk_index": 13,
+          "score": 0.0267
+        },
+        {
+          "title": "Szolnoki vár",
+          "section": "A vár felépítése",
+          "chunk_index": 4,
+          "score": 0.026
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Szigetvár, Szigetvári vár (Baranya vármegye)",
+          "chunk_index": 295,
+          "score": 0.0257
+        },
+        {
+          "title": "Kőszegi vár",
+          "section": "Esterházy oltár",
+          "chunk_index": 8,
+          "score": 0.0254
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.025
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q019",
+      "question": "Melyik nemzetség építtethette a füzéri várat az Árpád-korban a feltételezések szerint?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Füzéri vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Füzéri vár",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Füzéri vár",
+          "section": "Keletkezése az Árpád-korban",
+          "chunk_index": 6,
+          "score": 0.032
+        },
+        {
+          "title": "Füzéri vár",
+          "section": "Keletkezése az Árpád-korban",
+          "chunk_index": 8,
+          "score": 0.032
+        },
+        {
+          "title": "Füzéri vár",
+          "section": "Keletkezése az Árpád-korban",
+          "chunk_index": 7,
+          "score": 0.0312
+        },
+        {
+          "title": "Füzéri vár",
+          "section": "Keletkezése az Árpád-korban",
+          "chunk_index": 5,
+          "score": 0.0305
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Füzér, Füzéri vár (Borsod-Abaúj-Zemplén megye)",
+          "chunk_index": 204,
+          "score": 0.0301
+        },
+        {
+          "title": "Füzéri vár",
+          "section": "Keletkezése az Árpád-korban",
+          "chunk_index": 9,
+          "score": 0.029
+        },
+        {
+          "title": "Füzéri vár",
+          "section": "A vár az Anjou-korban",
+          "chunk_index": 15,
+          "score": 0.0269
+        },
+        {
+          "title": "Füzéri vár",
+          "section": "Palota",
+          "chunk_index": 91,
+          "score": 0.0264
+        },
+        {
+          "title": "Füzéri vár",
+          "section": "Alsóvár",
+          "chunk_index": 70,
+          "score": 0.026
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q020",
+      "question": "Mely években épült az edelényi L’Huillier–Coburg-kastély?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "L’Huillier–Coburg-kastély"
+      ],
+      "related_titles": [],
+      "top1_score": 0.032266458495966696,
+      "top": [
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0323
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "Az építtető",
+          "chunk_index": 12,
+          "score": 0.0323
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "Az építtető",
+          "chunk_index": 15,
+          "score": 0.0306
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "Az építés ideje",
+          "chunk_index": 32,
+          "score": 0.0301
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "Az építtető",
+          "chunk_index": 17,
+          "score": 0.0301
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "Az építés ideje",
+          "chunk_index": 30,
+          "score": 0.0299
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "Az építés ideje",
+          "chunk_index": 35,
+          "score": 0.0273
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "Az épület előképei",
+          "chunk_index": 21,
+          "score": 0.0269
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "Változások a L'Huillier uradalomban",
+          "chunk_index": 78,
+          "score": 0.0265
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "Az építés ideje",
+          "chunk_index": 37,
+          "score": 0.0252
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q021",
+      "question": "Hány kastély és hány vár újul meg a Nemzeti Kastélyprogram és Nemzeti Várprogram keretében?",
+      "type": "tény",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Nemzeti Kastélyprogram és Nemzeti Várprogram"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Oroszlány, Esterházy-kastély, Majki műemlékegyüttes",
+          "chunk_index": 88,
+          "score": 0.0294
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Eger, Egri vár (Heves vármegye)",
+          "chunk_index": 200,
+          "score": 0.0256
+        },
+        {
+          "title": "Festetics-kastély (Dég)",
+          "section": "A kastély felújítása a Nemzeti Kastélyprogram keretében",
+          "chunk_index": 6,
+          "score": 0.0255
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Füzérradvány, Károlyi-kastély",
+          "chunk_index": 43,
+          "score": 0.0243
+        },
+        {
+          "title": "Szigetvári vár",
+          "section": "A vár felújítása a Nemzeti Várprogram keretében",
+          "chunk_index": 11,
+          "score": 0.0237
+        },
+        {
+          "title": "Füzéri vár",
+          "section": "A vár felújítása a Nemzeti Kastélyprogram és Nemzeti Várprogram keretében",
+          "chunk_index": 64,
+          "score": 0.0236
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Nádasdladány, Nádasdy-kastély",
+          "chunk_index": 67,
+          "score": 0.0227
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Nagycenk, Széchenyi-kastély",
+          "chunk_index": 87,
+          "score": 0.0224
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Eger, Egri vár (Heves vármegye)",
+          "chunk_index": 196,
+          "score": 0.022
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q022",
+      "question": "Mikor említik először írásban a csókakői erődítményt?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Csókakő vára"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0328
+        },
+        {
+          "title": "Hollókői vár",
+          "section": "A vár története",
+          "chunk_index": 1,
+          "score": 0.0308
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Fekvése",
+          "chunk_index": 0,
+          "score": 0.0303
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0295
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0288
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Leírása",
+          "chunk_index": 8,
+          "score": 0.0267
+        },
+        {
+          "title": "Bátorkő",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0256
+        },
+        {
+          "title": "Baglyaskő vára",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0254
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Feltárása",
+          "chunk_index": 6,
+          "score": 0.025
+        },
+        {
+          "title": "Csobánc vára",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.021
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q023",
+      "question": "Melyik vármegye egyetlen fennmaradt középkori eredetű, a török időkben is használt vára Csókakő vára?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Csókakő vára"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Csókakő vára",
+          "section": "Fekvése",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0308
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0302
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.029
+        },
+        {
+          "title": "Fejérkő vára",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0288
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0287
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Feltárása",
+          "chunk_index": 6,
+          "score": 0.0253
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Feltárása",
+          "chunk_index": 5,
+          "score": 0.025
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Leírása",
+          "chunk_index": 7,
+          "score": 0.0245
+        },
+        {
+          "title": "Márványkő vára",
+          "section": "Fekvése",
+          "chunk_index": 0,
+          "score": 0.0237
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q024",
+      "question": "Milyen más neveken ismert Fejérkő vára?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Fejérkő vára"
+      ],
+      "related_titles": [],
+      "top1_score": 0.032266458495966696,
+      "top": [
+        {
+          "title": "Fejérkő vára",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0323
+        },
+        {
+          "title": "Fejérkő vára",
+          "section": "A vár leírása",
+          "chunk_index": 12,
+          "score": 0.0308
+        },
+        {
+          "title": "Fejérkő vára",
+          "section": "A vár leírása",
+          "chunk_index": 11,
+          "score": 0.0301
+        },
+        {
+          "title": "Fejérkő vára",
+          "section": "A vár leírása",
+          "chunk_index": 9,
+          "score": 0.03
+        },
+        {
+          "title": "Fejérkő vára",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0288
+        },
+        {
+          "title": "Fejérkő vára",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0286
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Fekvése",
+          "chunk_index": 0,
+          "score": 0.0284
+        },
+        {
+          "title": "Fejérkő vára",
+          "section": "A vár leírása",
+          "chunk_index": 6,
+          "score": 0.028
+        },
+        {
+          "title": "Fejérkő vára",
+          "section": "Régészeti feltárások",
+          "chunk_index": 4,
+          "score": 0.027
+        },
+        {
+          "title": "Fejérkő vára",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0269
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q025",
+      "question": "Melyik Fekete István-regényben jelenik meg a balatonszemesi Bolondvár?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Bolondvár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Bolondvár",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.0328
+        },
+        {
+          "title": "Bolondvár",
+          "section": "",
+          "chunk_index": 2,
+          "score": 0.0323
+        },
+        {
+          "title": "Fekete-kastély (Balatonederics)",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0317
+        },
+        {
+          "title": "Majláth-kastély (Bakóca)",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0308
+        },
+        {
+          "title": "Fekete-kastély (Balatonederics)",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0284
+        },
+        {
+          "title": "Bolondvár",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0283
+        },
+        {
+          "title": "Fekete-kastély (Balatonederics)",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0282
+        },
+        {
+          "title": "Fekete-kastély (Balatonederics)",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0266
+        },
+        {
+          "title": "Csapody-kastély",
+          "section": "A kastélypark",
+          "chunk_index": 7,
+          "score": 0.0245
+        },
+        {
+          "title": "Festetics-kastély (Keszthely)",
+          "section": "A  Balatoni Borok Háza",
+          "chunk_index": 25,
+          "score": 0.0242
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q026",
+      "question": "Ki foglalta el és romboltatta le 1684-ben az érdi Kutyavárat?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Kutyavár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Kutyavár",
+          "section": "",
+          "chunk_index": 2,
+          "score": 0.0328
+        },
+        {
+          "title": "Kutyavár",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.0317
+        },
+        {
+          "title": "Kutyavár",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0304
+        },
+        {
+          "title": "Odorvár",
+          "section": "Feltárása",
+          "chunk_index": 4,
+          "score": 0.0282
+        },
+        {
+          "title": "Szenyéri vár",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.026
+        },
+        {
+          "title": "Ónodi vár",
+          "section": "Története",
+          "chunk_index": 8,
+          "score": 0.0251
+        },
+        {
+          "title": "Kinizsi-vár",
+          "section": "A vár története",
+          "chunk_index": 11,
+          "score": 0.0246
+        },
+        {
+          "title": "Tállyai vár",
+          "section": "Története",
+          "chunk_index": 5,
+          "score": 0.0156
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "A vár lerombolása és utóélete",
+          "chunk_index": 35,
+          "score": 0.0156
+        },
+        {
+          "title": "Sátoraljaújhelyi vár",
+          "section": "Története",
+          "chunk_index": 22,
+          "score": 0.0154
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q027",
+      "question": "Melyik településen áll a Gotthard–Akacs–Borsics–László-kastély, vagyis a Borsics-kastély?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Borsics-kastély"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Borsics-kastély",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Borsics-kastély",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0323
+        },
+        {
+          "title": "Rákóczi-kastély (Borsi)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0308
+        },
+        {
+          "title": "Borsics-kastély",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0284
+        },
+        {
+          "title": "Rákóczi-kastély (Borsi)",
+          "section": "A kastély felújítása",
+          "chunk_index": 13,
+          "score": 0.0257
+        },
+        {
+          "title": "Rákóczi-kastély (Borsi)",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0246
+        },
+        {
+          "title": "Rákóczi-kastély (Borsi)",
+          "section": "A kastély felújítása",
+          "chunk_index": 16,
+          "score": 0.0234
+        },
+        {
+          "title": "Serényi-kastély (Putnok)",
+          "section": "A Putnoky család szerepe",
+          "chunk_index": 7,
+          "score": 0.022
+        },
+        {
+          "title": "Rákóczi-kastély (Borsi)",
+          "section": "A kastély felújítása",
+          "chunk_index": 12,
+          "score": 0.0159
+        },
+        {
+          "title": "Bolza-kastély",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0159
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q028",
+      "question": "Mikor és kitől kapott nemesi címet a Dukai Takách család?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Dukai Takách–Bárdossy-kúria"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0328
+        },
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0323
+        },
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0317
+        },
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.031
+        },
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0299
+        },
+        {
+          "title": "Károlyi-kastély (Derekegyház)",
+          "section": "Története",
+          "chunk_index": 9,
+          "score": 0.0293
+        },
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Felépítése",
+          "chunk_index": 5,
+          "score": 0.0264
+        },
+        {
+          "title": "Batthyány-Strattmann-kastély (Intaháza)",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.025
+        },
+        {
+          "title": "Grassalkovich-kastély (Baja)",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0249
+        },
+        {
+          "title": "Szigligeti Alkotóház",
+          "section": "A kastély története",
+          "chunk_index": 2,
+          "score": 0.0235
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q029",
+      "question": "Mi működik jelenleg a bácsalmási Siskovics–Fischof-kúriában?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Siskovics–Fischof-kúria"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Siskovics–Fischof-kúria",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Bács-Kiskun megye kastélyainak és kúriáinak listája",
+          "section": "Jelenleg is látható várak, kastélyok és kúriák",
+          "chunk_index": 5,
+          "score": 0.0318
+        },
+        {
+          "title": "Siskovics–Fischof-kúria",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0315
+        },
+        {
+          "title": "Siskovics–Fischof-kúria",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0308
+        },
+        {
+          "title": "Siskovics–Fischof-kúria",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0303
+        },
+        {
+          "title": "Siskovics–Fischof-kúria",
+          "section": "Felépítése",
+          "chunk_index": 6,
+          "score": 0.0302
+        },
+        {
+          "title": "Siskovics–Fischof-kúria",
+          "section": "Felépítése",
+          "chunk_index": 5,
+          "score": 0.0296
+        },
+        {
+          "title": "Siskovics–Fischof-kúria",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.029
+        },
+        {
+          "title": "Bács-Kiskun megye kastélyainak és kúriáinak listája",
+          "section": "Jelenleg is látható várak, kastélyok és kúriák",
+          "chunk_index": 3,
+          "score": 0.0261
+        },
+        {
+          "title": "Kovachich-kúria (Bácsalmás)",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0251
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q030",
+      "question": "Milyen állat látható a romhányi Laszkári-kúria timpanonjában lévő családi címerben?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Laszkári-kúria"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Laszkári-kúria",
+          "section": "Leírása",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Laszkári-kúria",
+          "section": "Története",
+          "chunk_index": 6,
+          "score": 0.0318
+        },
+        {
+          "title": "Laszkári-kúria",
+          "section": "Története",
+          "chunk_index": 5,
+          "score": 0.0315
+        },
+        {
+          "title": "Laszkári-kúria",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.031
+        },
+        {
+          "title": "Laszkári-kúria",
+          "section": "Története",
+          "chunk_index": 7,
+          "score": 0.031
+        },
+        {
+          "title": "Pallavicini-kastély (Pusztaradvány)",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.0296
+        },
+        {
+          "title": "Semsey-kastély",
+          "section": "A kastély felépítése, kinézete",
+          "chunk_index": 9,
+          "score": 0.029
+        },
+        {
+          "title": "Laszkári-kúria",
+          "section": "Leírása",
+          "chunk_index": 2,
+          "score": 0.0273
+        },
+        {
+          "title": "Kovachich-kúria (Bácsalmás)",
+          "section": "Felépítése",
+          "chunk_index": 3,
+          "score": 0.0272
+        },
+        {
+          "title": "Laszkári-kúria",
+          "section": "Története",
+          "chunk_index": 8,
+          "score": 0.0271
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q031",
+      "question": "Ki építtette a tomori Búza-kúria elődjét?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Búza-kúria"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03252247488101534,
+      "top": [
+        {
+          "title": "Búza-kúria",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0325
+        },
+        {
+          "title": "Búza-kúria",
+          "section": "Épület felépítése",
+          "chunk_index": 1,
+          "score": 0.0325
+        },
+        {
+          "title": "Búza-kúria",
+          "section": "Az épület sorsa",
+          "chunk_index": 5,
+          "score": 0.0317
+        },
+        {
+          "title": "Búza-kúria",
+          "section": "Az épület sorsa",
+          "chunk_index": 8,
+          "score": 0.0306
+        },
+        {
+          "title": "Búza-kúria",
+          "section": "Az épület sorsa",
+          "chunk_index": 7,
+          "score": 0.0303
+        },
+        {
+          "title": "Búza-kúria",
+          "section": "Kúria érdekességei",
+          "chunk_index": 3,
+          "score": 0.0301
+        },
+        {
+          "title": "Búza-kúria",
+          "section": "Az épület sorsa",
+          "chunk_index": 6,
+          "score": 0.0301
+        },
+        {
+          "title": "Búza-kúria",
+          "section": "Az épület sorsa",
+          "chunk_index": 9,
+          "score": 0.0294
+        },
+        {
+          "title": "Búza-kúria",
+          "section": "Kúria érdekességei",
+          "chunk_index": 4,
+          "score": 0.0293
+        },
+        {
+          "title": "Búza-kúria",
+          "section": "Épület felépítése",
+          "chunk_index": 2,
+          "score": 0.0263
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q032",
+      "question": "Milyen tisztséget töltött be a galgagyörki Tahy család feje Nógrád vármegyében?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Tahy-kúria"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Tahy-kúria",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Galgagyörk",
+          "chunk_index": 8,
+          "score": 0.0323
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Galgagyörk",
+          "chunk_index": 5,
+          "score": 0.0313
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Galgagyörk",
+          "chunk_index": 7,
+          "score": 0.031
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Galgagyörk",
+          "chunk_index": 6,
+          "score": 0.0306
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0301
+        },
+        {
+          "title": "Hollókői vár",
+          "section": "A vár története",
+          "chunk_index": 9,
+          "score": 0.0278
+        },
+        {
+          "title": "Nógrádi vár",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0278
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "Az ország három részre szakadása után",
+          "chunk_index": 29,
+          "score": 0.0266
+        },
+        {
+          "title": "Széchenyi-kastély (Nagycenk)",
+          "section": "A kastély építése",
+          "chunk_index": 2,
+          "score": 0.0249
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q033",
+      "question": "Kik tervezték az 1902-ben épült szirmai Klein-kastélyt?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Klein-kastély"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Klein-kastély",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Klein-kastély",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.032
+        },
+        {
+          "title": "Szirmay-kastély (Szirmabesenyő)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0293
+        },
+        {
+          "title": "Lónyay-kastély (Bodrogolaszi)",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0267
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Geszt, Tisza-kastély",
+          "chunk_index": 52,
+          "score": 0.0235
+        },
+        {
+          "title": "Zichy-kastély (Vajta)",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0231
+        },
+        {
+          "title": "Kiscelli kastély és parkerdő",
+          "section": "Története",
+          "chunk_index": 5,
+          "score": 0.0221
+        },
+        {
+          "title": "Geist-kastély",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0219
+        },
+        {
+          "title": "Zichy–Hadik-kastély",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0214
+        },
+        {
+          "title": "Esterházy-kastély (Kismarton)",
+          "section": "Története",
+          "chunk_index": 9,
+          "score": 0.0159
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q034",
+      "question": "Ki tervezte a budapesti Andrássy út 3. szám alatti Saxlehner-palotát, és ki építtette?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Saxlehner-palota"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Saxlehner-palota",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Foncière-palota",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0323
+        },
+        {
+          "title": "Károlyi–Csekonics-palota",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0317
+        },
+        {
+          "title": "Neuschloss Palota",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0288
+        },
+        {
+          "title": "Gresham-palota",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0278
+        },
+        {
+          "title": "Lánchíd Palota",
+          "section": "Történelem",
+          "chunk_index": 0,
+          "score": 0.0275
+        },
+        {
+          "title": "Sándor-palota (Budapest)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0257
+        },
+        {
+          "title": "Sándor-palota (Budapest)",
+          "section": "Története",
+          "chunk_index": 5,
+          "score": 0.0237
+        },
+        {
+          "title": "New York-palota",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0226
+        },
+        {
+          "title": "Grassalkovich-kastély (Pozsony)",
+          "section": "Az építtetés körülményei",
+          "chunk_index": 1,
+          "score": 0.0222
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q035",
+      "question": "Melyik szobrot helyezték vissza 1990-ben a budapesti Foncière-palotára?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Foncière-palota"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Foncière-palota",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Budavári Palota",
+          "section": "Szobrok",
+          "chunk_index": 57,
+          "score": 0.0313
+        },
+        {
+          "title": "Budavári Palota",
+          "section": "Szobrok",
+          "chunk_index": 58,
+          "score": 0.0304
+        },
+        {
+          "title": "Budavári Palota",
+          "section": "A II. világháború után",
+          "chunk_index": 43,
+          "score": 0.0299
+        },
+        {
+          "title": "Budavári Palota",
+          "section": "A palota jelene és jövője",
+          "chunk_index": 54,
+          "score": 0.0281
+        },
+        {
+          "title": "Sándor-palota (Budapest)",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.0274
+        },
+        {
+          "title": "Budavári Palota",
+          "section": "Szobrok",
+          "chunk_index": 56,
+          "score": 0.0272
+        },
+        {
+          "title": "Citadella (Budapest)",
+          "section": "Polgári hasznosítása",
+          "chunk_index": 14,
+          "score": 0.0263
+        },
+        {
+          "title": "Budavári Palota",
+          "section": "A II. világháború után",
+          "chunk_index": 42,
+          "score": 0.0263
+        },
+        {
+          "title": "Sándor-palota (Budapest)",
+          "section": "Története",
+          "chunk_index": 6,
+          "score": 0.0261
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q036",
+      "question": "Milyen évszám olvasható a győri Torkos-palota bejáratának zárókövén?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Torkos-palota"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Torkos-palota",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Torkos-palota",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.0318
+        },
+        {
+          "title": "Budavári Palota",
+          "section": "A palota jelene és jövője",
+          "chunk_index": 51,
+          "score": 0.0278
+        },
+        {
+          "title": "Királyi palota (Visegrád)",
+          "section": "Feltárások (csonk)",
+          "chunk_index": 5,
+          "score": 0.0276
+        },
+        {
+          "title": "Batthyány-kastély (Zalaszentgrót)",
+          "section": "Feliratok",
+          "chunk_index": 8,
+          "score": 0.0246
+        },
+        {
+          "title": "Péterffy-palota",
+          "section": "Leírása",
+          "chunk_index": 2,
+          "score": 0.0203
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Komlódtótfalu, Becsky-kúria",
+          "chunk_index": 65,
+          "score": 0.0161
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Komlódtótfalu, Becsky-kúria",
+          "chunk_index": 64,
+          "score": 0.0159
+        },
+        {
+          "title": "Budavári Palota",
+          "section": "Szobrok",
+          "chunk_index": 58,
+          "score": 0.0159
+        },
+        {
+          "title": "New York-palota",
+          "section": "Építészeti leírása",
+          "chunk_index": 48,
+          "score": 0.0156
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q037",
+      "question": "Ki építtette 1716-ban a dunaharaszti Laffert-kúriát?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Laffert-kúria"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Laffert-kúria",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Laffert-kúria",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.032
+        },
+        {
+          "title": "Laffert-kúria",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0295
+        },
+        {
+          "title": "Deák-kúria",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.026
+        },
+        {
+          "title": "Nádasdy-kastély (Nádasdladány)",
+          "section": "A kastély",
+          "chunk_index": 1,
+          "score": 0.0257
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0245
+        },
+        {
+          "title": "Nagytétényi Kastélymúzeum",
+          "section": "Az épület",
+          "chunk_index": 3,
+          "score": 0.023
+        },
+        {
+          "title": "Zichy-kastély (Zsámbék)",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0159
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "Az építés ideje",
+          "chunk_index": 34,
+          "score": 0.0156
+        },
+        {
+          "title": "Hodossy-kastély",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0156
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q038",
+      "question": "Milyen típusú erődítmény lehetett a 14. században a mátrai Kanázsvár, és mit jelent ez?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Kanázsvár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03252247488101534,
+      "top": [
+        {
+          "title": "Kanázsvár",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0325
+        },
+        {
+          "title": "Kanázsvár",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.0313
+        },
+        {
+          "title": "Hollókői vár",
+          "section": "A vár története",
+          "chunk_index": 1,
+          "score": 0.0254
+        },
+        {
+          "title": "Halomvár",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0217
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Komlódtótfalu, Becsky-kúria",
+          "chunk_index": 65,
+          "score": 0.0164
+        },
+        {
+          "title": "Egervári várkastély",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0159
+        },
+        {
+          "title": "Almásy-kastély (Gyulavári)",
+          "section": "Kiállításai",
+          "chunk_index": 21,
+          "score": 0.0159
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Komlódtótfalu, Becsky-kúria",
+          "chunk_index": 64,
+          "score": 0.0156
+        },
+        {
+          "title": "Odorvár",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0156
+        },
+        {
+          "title": "Kanázsvár",
+          "section": "",
+          "chunk_index": 2,
+          "score": 0.0154
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q039",
+      "question": "Melyik víztározó északi partján található a mára elpusztult Dedevár?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Dedevár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Dedevár",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Upponyi földvár",
+          "section": "Elhelyezkedése",
+          "chunk_index": 0,
+          "score": 0.0313
+        },
+        {
+          "title": "Latorvár (Sály)",
+          "section": "Elhelyezkedése",
+          "chunk_index": 0,
+          "score": 0.028
+        },
+        {
+          "title": "Dedevár",
+          "section": "Leírása",
+          "chunk_index": 1,
+          "score": 0.0276
+        },
+        {
+          "title": "Vadnai vár",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0268
+        },
+        {
+          "title": "Szarvaskői vár",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0257
+        },
+        {
+          "title": "Kácsi vár",
+          "section": "Elhelyezkedése",
+          "chunk_index": 0,
+          "score": 0.0249
+        },
+        {
+          "title": "Szederjesvár",
+          "section": "Fekvése",
+          "chunk_index": 0,
+          "score": 0.0244
+        },
+        {
+          "title": "Dezsővár",
+          "section": "Fekvése",
+          "chunk_index": 0,
+          "score": 0.0238
+        },
+        {
+          "title": "Sajóvelezdi vár",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0224
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q040",
+      "question": "Mikor építették a Bakonycsernye közelében álló Csiklingvár mai várát?",
+      "type": "tény",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Csiklingvár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Csiklingvár",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Kinizsi-vár",
+          "section": "Fekvése",
+          "chunk_index": 1,
+          "score": 0.0254
+        },
+        {
+          "title": "Essegvár",
+          "section": "A vár története",
+          "chunk_index": 4,
+          "score": 0.0254
+        },
+        {
+          "title": "Várpalotai vár",
+          "section": "A vár története",
+          "chunk_index": 0,
+          "score": 0.0247
+        },
+        {
+          "title": "Salgó vára",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.023
+        },
+        {
+          "title": "Zagyvafő vára",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0161
+        },
+        {
+          "title": "Szigligeti vár",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0161
+        },
+        {
+          "title": "Cseszneki vár",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0159
+        },
+        {
+          "title": "Gesztesi vár",
+          "section": "Leírása",
+          "chunk_index": 10,
+          "score": 0.0159
+        },
+        {
+          "title": "Szigliget-Óvár",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0156
+        }
+      ],
+      "article_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q041",
+      "question": "Melyik a régebbi: a Bakonycsernye melletti Csiklingvár vagy a tatai vár?",
+      "type": "több cikk",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Csiklingvár",
+        "Tatai vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Csiklingvár",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Várpalotai vár",
+          "section": "A vár története",
+          "chunk_index": 0,
+          "score": 0.0315
+        },
+        {
+          "title": "Cseszneki vár",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0302
+        },
+        {
+          "title": "Tatai vár",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0291
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 3,
+          "score": 0.0268
+        },
+        {
+          "title": "Essegvár",
+          "section": "A vár története",
+          "chunk_index": 4,
+          "score": 0.0232
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 10,
+          "score": 0.0231
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború után",
+          "chunk_index": 21,
+          "score": 0.0225
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 12,
+          "score": 0.0202
+        },
+        {
+          "title": "Szigligeti vár",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0161
+        }
+      ],
+      "article_recall": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 0.5,
+        "3": 0.5,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q042",
+      "question": "Melyik vár első írásos említése régebbi: a kőszegié vagy a siklósié?",
+      "type": "több cikk",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Kőszegi vár",
+        "Siklósi vár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Siklósi vár",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0328
+        },
+        {
+          "title": "Kőszegi vár",
+          "section": "A vár története",
+          "chunk_index": 0,
+          "score": 0.032
+        },
+        {
+          "title": "Siklósi vár",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0312
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0301
+        },
+        {
+          "title": "Siklósi vár",
+          "section": "A románkori vár",
+          "chunk_index": 12,
+          "score": 0.028
+        },
+        {
+          "title": "Essegvár",
+          "section": "A vár története",
+          "chunk_index": 2,
+          "score": 0.0274
+        },
+        {
+          "title": "Füzéri vár",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0261
+        },
+        {
+          "title": "Siklósi vár",
+          "section": "A reneszánsz várpalota",
+          "chunk_index": 16,
+          "score": 0.0255
+        },
+        {
+          "title": "Éleskővár",
+          "section": "Történeti áttekintés",
+          "chunk_index": 3,
+          "score": 0.0248
+        },
+        {
+          "title": "Budai Várnegyed",
+          "section": "Elnevezése",
+          "chunk_index": 4,
+          "score": 0.024
+        }
+      ],
+      "article_recall": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q043",
+      "question": "Melyik kastély építése kezdődött korábban: a gödöllői Grassalkovich-kastélyé vagy a fertődi Esterházy-kastélyé?",
+      "type": "több cikk",
+      "popularity": "ismert",
+      "gold_titles": [
+        "Esterházy-kastély (Fertőd)",
+        "Grassalkovich-kastély (Gödöllő)"
+      ],
+      "related_titles": [],
+      "top1_score": 0.032018442622950824,
+      "top": [
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.032
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Fertőd, Esterházy-kastély",
+          "chunk_index": 30,
+          "score": 0.0317
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0293
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0288
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "",
+          "chunk_index": 1,
+          "score": 0.0271
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Fertőd, Esterházy-kastély",
+          "chunk_index": 29,
+          "score": 0.0271
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 2,
+          "score": 0.0269
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastélypark",
+          "chunk_index": 16,
+          "score": 0.0267
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 9,
+          "score": 0.026
+        },
+        {
+          "title": "Esterházy-kastély (Fertőd)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0258
+        }
+      ],
+      "article_recall": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "10": 0.5
+      },
+      "chunk_rr": 0.14285714285714285
+    },
+    {
+      "id": "q044",
+      "question": "Mely várakat zálogosították el a 15. században Rozgonyi Istvánnak?",
+      "type": "több cikk",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [
+        "Dédesi vár",
+        "Tatai vár",
+        "Vitányvár"
+      ],
+      "related_titles": [],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Vitányvár",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0328
+        },
+        {
+          "title": "Tatai vár",
+          "section": "A második világháború végéig",
+          "chunk_index": 3,
+          "score": 0.0317
+        },
+        {
+          "title": "Solymári vár",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0313
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0308
+        },
+        {
+          "title": "Dédesi vár",
+          "section": "Történeti áttekintés",
+          "chunk_index": 5,
+          "score": 0.0303
+        },
+        {
+          "title": "Boldogkői vár",
+          "section": "Tulajdonosváltások a 14–15. században",
+          "chunk_index": 16,
+          "score": 0.0277
+        },
+        {
+          "title": "Dédesi vár",
+          "section": "Történeti áttekintés",
+          "chunk_index": 4,
+          "score": 0.0262
+        },
+        {
+          "title": "Hegyesdi vár",
+          "section": "A vár  története",
+          "chunk_index": 4,
+          "score": 0.0256
+        },
+        {
+          "title": "Koroknya-vár",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0246
+        },
+        {
+          "title": "Kási vár",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0244
+        }
+      ],
+      "article_recall": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "article_rr": 1.0,
+      "unfindable_evidence": [],
+      "chunk_recall": {
+        "1": 0.3333333333333333,
+        "3": 0.6666666666666666,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "chunk_rr": 1.0
+    },
+    {
+      "id": "q045",
+      "question": "Mennyibe kerül a belépőjegy az egri várba?",
+      "type": "nincs válasz",
+      "popularity": "ismert",
+      "gold_titles": [],
+      "related_titles": [
+        "Egri vár"
+      ],
+      "top1_score": 0.031754032258064516,
+      "top": [
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Eger, Egri vár (Heves vármegye)",
+          "chunk_index": 198,
+          "score": 0.0318
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár felújítása a Nemzeti Várprogram keretében",
+          "chunk_index": 22,
+          "score": 0.0315
+        },
+        {
+          "title": "Egri vár",
+          "section": "Kiállítások",
+          "chunk_index": 34,
+          "score": 0.0311
+        },
+        {
+          "title": "Egri vár (Pilis)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0277
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Eger, Egri vár (Heves vármegye)",
+          "chunk_index": 194,
+          "score": 0.0271
+        },
+        {
+          "title": "Egri vár (Pilis)",
+          "section": "További filmforgatások",
+          "chunk_index": 2,
+          "score": 0.0264
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár felújítása a Nemzeti Várprogram keretében",
+          "chunk_index": 23,
+          "score": 0.0263
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár története",
+          "chunk_index": 8,
+          "score": 0.026
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár története",
+          "chunk_index": 19,
+          "score": 0.0256
+        },
+        {
+          "title": "Egri vár",
+          "section": "A vár története",
+          "chunk_index": 3,
+          "score": 0.0254
+        }
+      ]
+    },
+    {
+      "id": "q046",
+      "question": "Ki tervezte a csepregi Rottermann-kastélyt?",
+      "type": "nincs válasz",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [],
+      "related_titles": [
+        "Rottermann-kastély"
+      ],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Rottermann-kastély",
+          "section": "Leírása",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Rottermann-kastély",
+          "section": "Leírása",
+          "chunk_index": 1,
+          "score": 0.0323
+        },
+        {
+          "title": "Schöller-kastély",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0289
+        },
+        {
+          "title": "Kiscelli kastély és parkerdő",
+          "section": "A kolostor alapítása",
+          "chunk_index": 9,
+          "score": 0.0159
+        },
+        {
+          "title": "Széchenyi-kastély (Peresznye)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0159
+        },
+        {
+          "title": "Batthyány–Geist-kastély",
+          "section": "A kastély",
+          "chunk_index": 4,
+          "score": 0.0156
+        },
+        {
+          "title": "Redl-kastély",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0156
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Fertőd, Esterházy-kastély",
+          "chunk_index": 31,
+          "score": 0.0154
+        },
+        {
+          "title": "Károlyi-palota (Belváros)",
+          "section": "A második világháborúig",
+          "chunk_index": 54,
+          "score": 0.0152
+        },
+        {
+          "title": "Nemzeti Kastélyprogram és Nemzeti Várprogram",
+          "section": "Dég, Festetics-kastély",
+          "chunk_index": 17,
+          "score": 0.0152
+        }
+      ]
+    },
+    {
+      "id": "q047",
+      "question": "Hány szobája van a galgagyörki Tahy-kúriának?",
+      "type": "nincs válasz",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [],
+      "related_titles": [
+        "Tahy-kúria"
+      ],
+      "top1_score": 0.03252247488101534,
+      "top": [
+        {
+          "title": "Tahy-kúria",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0325
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Galgagyörk",
+          "chunk_index": 8,
+          "score": 0.0323
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Galgagyörk",
+          "chunk_index": 5,
+          "score": 0.032
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Galgagyörk",
+          "chunk_index": 7,
+          "score": 0.0312
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Galgagyörk",
+          "chunk_index": 6,
+          "score": 0.0303
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0301
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0299
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0288
+        },
+        {
+          "title": "Tahy-kúria",
+          "section": "Jelenlegi hasznosítása",
+          "chunk_index": 4,
+          "score": 0.0273
+        },
+        {
+          "title": "Tisza-kastély (Geszt)",
+          "section": "Arany János kerti lakja",
+          "chunk_index": 18,
+          "score": 0.0231
+        }
+      ]
+    },
+    {
+      "id": "q048",
+      "question": "Hány hektáros a gödöllői Grassalkovich-kastély parkja?",
+      "type": "nincs válasz",
+      "popularity": "ismert",
+      "gold_titles": [],
+      "related_titles": [
+        "Grassalkovich-kastély (Gödöllő)"
+      ],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "",
+          "chunk_index": 0,
+          "score": 0.0328
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastélypark",
+          "chunk_index": 16,
+          "score": 0.0315
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 5,
+          "score": 0.0305
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 1,
+          "score": 0.0304
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 2,
+          "score": 0.0291
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 3,
+          "score": 0.029
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastélypark",
+          "chunk_index": 17,
+          "score": 0.0287
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastélypark",
+          "chunk_index": 15,
+          "score": 0.0286
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "A kastély története",
+          "chunk_index": 4,
+          "score": 0.0286
+        },
+        {
+          "title": "Grassalkovich-kastély (Gödöllő)",
+          "section": "Lovarda",
+          "chunk_index": 14,
+          "score": 0.0278
+        }
+      ]
+    },
+    {
+      "id": "q049",
+      "question": "Ki a csókakői vár jelenlegi tulajdonosa?",
+      "type": "nincs válasz",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [],
+      "related_titles": [
+        "Csókakő vára"
+      ],
+      "top1_score": 0.03252247488101534,
+      "top": [
+        {
+          "title": "Csókakő vára",
+          "section": "Fekvése",
+          "chunk_index": 0,
+          "score": 0.0325
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0313
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0313
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.0311
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Feltárása",
+          "chunk_index": 5,
+          "score": 0.0308
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Feltárása",
+          "chunk_index": 6,
+          "score": 0.0306
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Leírása",
+          "chunk_index": 8,
+          "score": 0.0294
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Leírása",
+          "chunk_index": 7,
+          "score": 0.0282
+        },
+        {
+          "title": "Csókakő vára",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0272
+        },
+        {
+          "title": "Márványkő vára",
+          "section": "Fekvése",
+          "chunk_index": 0,
+          "score": 0.0265
+        }
+      ]
+    },
+    {
+      "id": "q050",
+      "question": "Mikor halt meg Dukai Takách Gizella?",
+      "type": "nincs válasz",
+      "popularity": "kevésbé ismert",
+      "gold_titles": [],
+      "related_titles": [
+        "Dukai Takách–Bárdossy-kúria"
+      ],
+      "top1_score": 0.03278688524590164,
+      "top": [
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Története",
+          "chunk_index": 1,
+          "score": 0.0328
+        },
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Története",
+          "chunk_index": 3,
+          "score": 0.032
+        },
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0318
+        },
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Története",
+          "chunk_index": 4,
+          "score": 0.0313
+        },
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Felépítése",
+          "chunk_index": 5,
+          "score": 0.0299
+        },
+        {
+          "title": "Dukai Takách–Bárdossy-kúria",
+          "section": "Története",
+          "chunk_index": 2,
+          "score": 0.0281
+        },
+        {
+          "title": "L’Huillier–Coburg-kastély",
+          "section": "A Coburg időszak",
+          "chunk_index": 82,
+          "score": 0.0248
+        },
+        {
+          "title": "Vay-kastély (Tiszacsege)",
+          "section": "Bérlők kezében",
+          "chunk_index": 9,
+          "score": 0.0233
+        },
+        {
+          "title": "Tokaji vár",
+          "section": "Története",
+          "chunk_index": 5,
+          "score": 0.0154
+        },
+        {
+          "title": "Geist-kastély",
+          "section": "Története",
+          "chunk_index": 0,
+          "score": 0.0152
+        }
+      ]
+    }
+  ]
+}

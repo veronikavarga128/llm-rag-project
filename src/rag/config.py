@@ -22,9 +22,6 @@ class Settings:
     chunk_size: int
     chunk_overlap: int
     top_k: int
-    llm_base_url: str
-    llm_api_key: str
-    llm_model: str
 
 
 def get_settings() -> Settings:
@@ -36,7 +33,4 @@ def get_settings() -> Settings:
         chunk_size=int(env("CHUNK_SIZE", "500")),
         chunk_overlap=int(env("CHUNK_OVERLAP", "100")),
         top_k=int(env("TOP_K", "5")),
-        llm_base_url=env("LLM_BASE_URL", "http://localhost:11434/v1"),
-        llm_api_key=env("LLM_API_KEY", "ollama"),
-        llm_model=env("LLM_MODEL", "llama3.1:8b"),
     )

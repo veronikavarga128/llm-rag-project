@@ -15,7 +15,7 @@ Egy reprodukálható RAG-pipeline, plusz egy kísérleti rész, amely összehaso
 
 **Téma:** magyarországi várak, kastélyok és kúriák cikkei a magyar Wikipédiából.
 **Forrás és licenc:** [hu.wikipedia.org](https://hu.wikipedia.org), CC BY-SA 4.0.
-**Méret:** 498 cikk (a 509 gyűjtöttből 9 túl rövid, 300 karakter alatti, ezt kihagytuk).
+**Méret:** 498 cikk (a 509 gyűjtöttből 9 túl rövid, 300 karakter alatti, ezt kihagytuk), összesen kb. 2,09 millió karakter.
 
 A nyers adat nincs a repóban, a `scripts/download_corpus.py` tölti le (csak standard könyvtárat használ):
 

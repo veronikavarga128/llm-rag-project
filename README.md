@@ -15,7 +15,7 @@ Egy reprodukálható RAG-pipeline, plusz egy kísérleti rész, amely összehaso
 
 **Téma:** magyarországi várak, kastélyok és kúriák cikkei a magyar Wikipédiából.
 **Forrás és licenc:** [hu.wikipedia.org](https://hu.wikipedia.org), CC BY-SA 4.0.
-**Méret:** 498 cikk (a 509 gyűjtöttből 9 túl rövid, 300 karakter alatti, ezt kihagytuk). _TODO: összes karakterszám a `data/corpus_manifest.json`-ból._
+**Méret:** 498 cikk (a 509 gyűjtöttből 9 túl rövid, 300 karakter alatti, ezt kihagytuk).
 
 A nyers adat nincs a repóban, a `scripts/download_corpus.py` tölti le (csak standard könyvtárat használ):
 
@@ -38,8 +38,8 @@ A kimenet a `data/raw/corpus.jsonl` (egy sor egy cikk, nem commitolt) és a `dat
 ## Követelmények
 
 - Python 3.11+
-- Docker Desktop (Qdrant, opcionálisan Ollama)
-- Generáláshoz: helyi Ollama vagy egy OpenAI-kompatibilis API
+- Docker Desktop (Qdrant)
+- Generáláshoz: [Ollama](https://ollama.com/download) (helyben futó modell, GPU és API-kulcs nélkül)
 
 ## Telepítés és futtatás
 
@@ -54,11 +54,9 @@ copy .env.example .env
 
 # 3. Vektoradatbázis
 docker compose up -d
-
-# (opcionális) helyi LLM
-docker compose --profile ollama up -d
-docker exec -it rag-ollama ollama pull llama3.1:8b
 ```
+
+A generáláshoz az Ollamát a gépre kell telepíteni.
 
 Bash/WSL esetén az aktiválás `source .venv/bin/activate`, a másolás `cp .env.example .env`.
 
@@ -140,32 +138,88 @@ Kimenet: `experiments/results/<név>.json` (kérdésenként is), valamint `summa
 
 ## Válaszgenerálás (Ollama)
 
-A válaszokat helyi, CPU-n futó kis modell generálja az [Ollama](https://ollama.com/download) segítségével (nem kell hozzá GPU vagy API-kulcs).
+A válaszokat helyben futó modell generálja az [Ollama](https://ollama.com/download) segítségével (CPU-n, GPU és API-kulcs nélkül). Az Ollamát a gépre kell telepíteni, a modell az Ollama saját mappájába töltődik le, nem a repóba.
 
 ```powershell
-# 1. Ollama telepítése (Windows-telepítő), majd modell letöltése (kb. 3 GB)
-ollama pull gemma3:4b
+# 1. Ollama telepítése (Windows-telepítő), majd modell letöltése
+ollama pull gemma3:4b      # kb. 3 GB, gyors, de gyenge
+ollama pull gemma3:12b     # kb. 8 GB, lassabb, sokkal jobb (kb. 16 GB RAM-tól)
 
 # 2. gyors próba kontextus nélkül
 python -m rag.generate "Hány helyiségből áll a keszthelyi Festetics-kastély?"
 
 # 3. kiértékelés: először néhány kérdéssel, utána mind az 50-nel (futó Qdrant is kell)
 python eval/run_generation_eval.py --limit 5
-python eval/run_generation_eval.py
+python eval/run_generation_eval.py --prompt balanced --model gemma3:12b
 ```
 
-Minden kérdésre két válasz készül: **rag** (a kereső top-k chunkja a promptban, "csak a forrásokból válaszolj" utasítással) és **norag** (ugyanaz a kérdés kontextus nélkül, ez a baseline). Az alapértelmezett keresés a `hybrid_stem5`, k = 5; módosítható (`--retriever`, `--k`, `--collection`, `--model`). A futás folytatható, a kész válaszokat nem kéri le újra.
+Minden kérdésre két válasz készül: **rag** (a kereső top-k chunkja a promptban, a forrásokból válaszolj utasítással) és **norag** (ugyanaz a kérdés kontextus nélkül, ez a baseline). Alapértelmezett keresés: `hybrid_stem5`, k = 5. Kapcsolók: `--model`, `--retriever`, `--k`, `--collection`, `--prompt {strict,balanced}`. A `strict` prompt szigorúan előírja az elutasító mondatot, ha a válasz nem derül ki a forrásokból, a `balanced` enyhébb: ha bármelyik forrásban szerepel a válasz, azt kell használni, és csak akkor szabad elutasítani, ha tényleg nincs benne. A futás folytatható, a kész válaszokat nem kéri le újra, a fájlnévben benne van a modell, a gyűjtemény, a kereső, a `k` és a prompt.
 
-Kimenet az `experiments/generation/` mappában: a nyers válaszok (`.jsonl`) és egy `.csv` kézi értékeléshez (a `kézi` oszlopot kell kitölteni, pl. 1 / 0,5 / 0). A szkript automatikus jeleket is számol: az elvárt válasz szavainak szótő-egyezését, az elutasítás felismerését, és hogy a lekért kontextusban benne volt-e a bizonyíték. Utóbbi választja szét a keresési hibát a generálási hibától. A "nincs válasz" kérdéseknél a kitalált (nem elutasított) válaszok aránya a hallucináció mérőszáma. Az automatikus jelek durva közelítések, a végső helyességi arány a kézi értékelésből számolandó.
+Kimenet az `experiments/generation/` mappában: a nyers válaszok (`.jsonl`) és egy `.csv` kézi értékeléshez (a `kézi` oszlop: 1 / 0,5 / 0). Az automatikus jelek (az elvárt válasz szavainak szótő-egyezése, az elutasítás felismerése, és hogy a lekért kontextusban benne volt-e a bizonyíték) durva közelítések, a végső helyességi arány az értékelésből számolandó.
+
+## Eredmények
+
+Minden mérés 50 kérdésen készült, ebből 44 válaszolható és 6 `nincs válasz` típusú. Egy kérdés a válaszolhatóknál kb. 2,3 százalékpont, ezért pár kérdésnyi különbség a zaj határán belül van.
+
+### Retrieval (chunkszint, 44 válaszolható kérdés)
+
+Rendezve chunk MRR szerint. Ha nincs más jelölve, a keresés dense (embedding), a gyűjtemény `corpus` (chunk 500 / átfedés 100, cikkcím-előtaggal). A teljes táblázat: `experiments/results/summary.md`.
+
+| Konfiguráció | R@1 | R@5 | MRR |
+|---|---|---|---|
+| chunk 300 / 50 | 0,826 | 0,958 | 0,917 |
+| hibrid (dense + BM25, szótövezéssel) | 0,826 | 0,955 | 0,904 |
+| chunk 1000 / 200 | 0,792 | 0,958 | 0,890 |
+| chunk 500 / 200 | 0,792 | 0,981 | 0,885 |
+| chunk 800 / 150 | 0,701 | 0,981 | 0,856 |
+| BM25 szótövezéssel | 0,758 | 0,890 | 0,855 |
+| **baseline** (chunk 500 / 100) | 0,735 | 0,955 | 0,849 |
+| hibrid szótövezés nélkül | 0,761 | 0,886 | 0,827 |
+| chunk 500 / 0 | 0,655 | 0,989 | 0,805 |
+| cikkcím-előtag nélkül | 0,689 | 0,811 | 0,758 |
+| BM25 szótövezés nélkül | 0,648 | 0,769 | 0,713 |
+
+- A cikkcím-előtag az embeddingben sokat számít (MRR 0,849 → 0,758 nélküle).
+- A BM25-höz magyar toldalékolás miatt szótövezés kell (5 karakteres csonkolás: MRR 0,713 → 0,855). A szótövezett hibrid a legjobb keresési módszer a baseline gyűjteményen, a szótövezés nélküli hibrid viszont rosszabb a dense-nél.
+- Az átfedés növelése javítja az eredményt, de ebben részben a mérőszám torzít: átfedésnél ugyanaz az idézet több chunkban is szerepel, így több chunk számít relevánsnak.
+- A cikkszintű Recall@5 szinte minden konfigurációnál 1,0 közeli, ezért a chunkszintű R@1 és MRR az informatív mérték.
+- A reranker (`bge-reranker-v2-m3`) mérése nem sikerült: a modell letöltése hibára futott a fejlesztői gépen.
+
+### Generálás (44 válaszolható + 6 `nincs válasz` kérdés)
+
+Automatikus jelek, `hybrid_stem5` kereséssel, k = 5 (ahol más nincs jelölve):
+
+| Modell és prompt | Helyes válasz (aut.) | Elutasított (válaszolható) | `nincs válasz` helyesen elutasítva | RAG-válasz ideje |
+|---|---|---|---|---|
+| gemma3:4b, strict | 17 (39%) | 25 (57%) | 6/6 | 12 mp |
+| gemma3:4b, balanced | 21 (48%) | 20 (45%) | 6/6 | 11 mp |
+| gemma3:4b, balanced, k = 3 | 19 (43%) | 22 (50%) | 6/6 | 6 mp |
+| gemma3:12b, balanced | 38 (86%) | 1 (2%) | 5/6 | 37 mp |
+
+Baseline (kontextus nélkül): a 4B modell 0 helyes választ ad, a kérdések 86%-át elutasítja ("Nem tudom"). A 12B modell 2 helyes választ ad, szinte semmit nem utasít el, és mind a 6 `nincs válasz` kérdésre kitalál egy választ.
+
+Értékelés a gemma3:12b futásra (1 = helyes, 0,5 = részben helyes, 0 = téves vagy elutasított):
+
+| | RAG | Baseline |
+|---|---|---|
+| Teljesen helyes válaszolható kérdés (44) | 40 (91%) | 1 (2%) |
+| Pontszám összesen | 41,0 / 44 (93%) | 3,0 / 44 (7%) |
+| `nincs válasz` helyesen kezelve (6) | 5, plusz 1 részleges | 0 |
+
+- A modellméret hatása a legnagyobb: ugyanazokkal a forrásokkal és prompttal a 4B-ről 12B-re váltva a helyes válaszok aránya 48%-ról 86%-ra nőtt (automatikus jel), és a téves elutasítások szinte megszűntek.
+- A kis modell a forrásban szó szerint szereplő választ is gyakran elutasítja (a lekért kontextusban 42/44 esetben benne volt a bizonyíték), ezért a 6/6 helyes elutasítás a 4B-nél félrevezető: a modell majdnem mindent elutasít.
+- A kontextus nélküli (baseline) nagy modell magabiztosan hallucinál, a RAG ezt jelentősen csökkenti.
+- A prompt enyhítése és a `k` csökkentése a 4B modellnél csak a zaj határát megközelítő különbséget hozott. Ugyanazon kérdésre a modell futásonként eltérően válaszolhat.
+- A többcikkes kérdéseknél az automatikus jel túlbecsülhet, ezért érdemes az értékelést kézzel is végezni.
 
 ## Repóstruktúra
 
 ```
 scripts/        letöltő szkript (download_corpus.py)
-src/rag/        a pipeline forráskódja (betöltés, chunkolás, embedding, keresés, generálás)
+src/rag/        a pipeline forráskódja (betöltés, chunkolás, embedding, keresés, retrieval-változatok, generálás)
 data/           korpusz (nyers adat nem commitolt)
 eval/           kérdés-válasz értékelő készlet és metrikák
-experiments/    kísérleti konfigurációk és összesítő eredmények
+experiments/    kísérletfuttató, retrieval-eredmények (results/) és generált válaszok (generation/)
 docs/           rövid dokumentáció, jegyzetek
 tests/          tesztek
 ```

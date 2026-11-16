@@ -9,24 +9,5 @@ services:
       - qdrant_storage:/qdrant/storage
     restart: unless-stopped
 
-  ollama:
-    image: ollama/ollama:latest
-    container_name: rag-ollama
-    profiles: ["ollama"]
-    ports:
-      - "11434:11434"
-    volumes:
-      - ollama_models:/root/.ollama
-    restart: unless-stopped
-    # GPU:
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: all
-    #           capabilities: [gpu]
-
 volumes:
   qdrant_storage:
-  ollama_models:

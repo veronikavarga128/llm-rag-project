@@ -1,7 +1,6 @@
 # llm-rag-project
 
-RAG-rendszer építése és kiértékelése egy választott korpuszon. 
-
+RAG-rendszer építése és kiértékelése egy választott korpuszon.
 
 ## Cél
 
@@ -109,6 +108,56 @@ A készlet és a korpusz egyezésének ellenőrzése (a bizonyítékok szó szer
 python eval/validate_questions.py
 ```
 
+## Retrieval-mérés
+
+```powershell
+# a baseline gyűjtemény mérése (futó Qdrant és betöltött gyűjtemény kell hozzá)
+python eval/run_retrieval_eval.py
+
+# másik konfiguráció mérése
+python eval/run_retrieval_eval.py --collection corpus_c800_o150
+```
+
+A szkript a 44 válaszolható kérdést futtatja végig, és két szinten számol Recall@k-t (k = 1, 3, 5, 10) és MRR-t, típusonként és hely-ismertség szerint bontva:
+
+- **Cikkszint:** a helyes cikk szerepel-e a találatok között.
+- **Chunkszint:** szerepel-e olyan chunk a találatok között, amely a forrásidézetet is tartalmazza. Ez a szigorúbb mérték, a chunkméret és a keresési módszer hatása ebben látszik jobban.
+
+A 6 `nincs válasz` kérdésnél retrieval-metrika nem értelmezett, ezeknél a legjobb találat hasonlósági pontszámát írja ki a szkript, hogy később eldönthető legyen, használható-e pontszámküszöb a "nem tudom" válaszhoz. A részletes eredmény (kérdésenként a találatok is) az `experiments/results/<gyűjtemény>.json` fájlba kerül, ez commitolható. A chunkszintű relevancia a gyűjtemény tényleges chunkjaiból számolódik, ezért a különböző chunkméretű gyűjtemények eredményei összevethetők.
+
+## Kísérletek
+
+```powershell
+python experiments/run_experiments.py --dry-run            # mit futtatna
+python experiments/run_experiments.py --only retrievers chunking prefix
+python experiments/run_experiments.py --only rerank        # nagy modellt tölt le (~2 GB)
+python experiments/run_experiments.py summary              # csak az összesítő
+```
+
+Csoportok: `baseline` (chunk 500/100, cikkcím-előtaggal, dense), `retrievers` (BM25, BM25 5 karakteres szótövezéssel, hibrid dense + BM25 Reciprocal Rank Fusion-nel), `chunking` (300/50, 800/150, 1000/200, 500/0, 500/200), `prefix` (cikkcím-előtag nélkül), `rerank` (cross-encoder, `BAAI/bge-reranker-v2-m3`, top-20). A futtató a hiányzó gyűjteményeket felépíti, a kész méréseket kihagyja (`--force` újramér, `--reingest` újraépít), így megszakítás után folytatható. A teljes futás kb. 25–30 perc a reranker letöltése nélkül.
+
+Kimenet: `experiments/results/<név>.json` (kérdésenként is), valamint `summary.md` és `summary.csv` (chunk MRR szerint rendezve). A mérések naplója az `experiments/runs/` mappába kerül (nem commitolandó).
+
+## Válaszgenerálás (Ollama)
+
+A válaszokat helyi, CPU-n futó kis modell generálja az [Ollama](https://ollama.com/download) segítségével (nem kell hozzá GPU vagy API-kulcs).
+
+```powershell
+# 1. Ollama telepítése (Windows-telepítő), majd modell letöltése (kb. 3 GB)
+ollama pull gemma3:4b
+
+# 2. gyors próba kontextus nélkül
+python -m rag.generate "Hány helyiségből áll a keszthelyi Festetics-kastély?"
+
+# 3. kiértékelés: először néhány kérdéssel, utána mind az 50-nel (futó Qdrant is kell)
+python eval/run_generation_eval.py --limit 5
+python eval/run_generation_eval.py
+```
+
+Minden kérdésre két válasz készül: **rag** (a kereső top-k chunkja a promptban, "csak a forrásokból válaszolj" utasítással) és **norag** (ugyanaz a kérdés kontextus nélkül, ez a baseline). Az alapértelmezett keresés a `hybrid_stem5`, k = 5; módosítható (`--retriever`, `--k`, `--collection`, `--model`). A futás folytatható, a kész válaszokat nem kéri le újra.
+
+Kimenet az `experiments/generation/` mappában: a nyers válaszok (`.jsonl`) és egy `.csv` kézi értékeléshez (a `kézi` oszlopot kell kitölteni, pl. 1 / 0,5 / 0). A szkript automatikus jeleket is számol: az elvárt válasz szavainak szótő-egyezését, az elutasítás felismerését, és hogy a lekért kontextusban benne volt-e a bizonyíték. Utóbbi választja szét a keresési hibát a generálási hibától. A "nincs válasz" kérdéseknél a kitalált (nem elutasított) válaszok aránya a hallucináció mérőszáma. Az automatikus jelek durva közelítések, a végső helyességi arány a kézi értékelésből számolandó.
+
 ## Repóstruktúra
 
 ```
@@ -120,11 +169,3 @@ experiments/    kísérleti konfigurációk és összesítő eredmények
 docs/           rövid dokumentáció, jegyzetek
 tests/          tesztek
 ```
-
-## Ütemterv
-
-| Mérföldkő | Időpont | Tartalom |
-|---|---|---|
-| Téma kiválasztása | 4. hét | korpusz, irány |
-| Köztes állapot | kb. 9. hét | működő baseline, első mérések |
-| Végleges leadás és bemutatás | 13. hét / vizsgaidőszak | összes kísérlet, dokumentáció |

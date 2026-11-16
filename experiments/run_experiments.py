@@ -85,8 +85,6 @@ EXPERIMENTS: list[Experiment] = [
 ]
 
 
-# ---------------------------------------------------------------------- futtatás
-
 
 def child_env() -> dict[str, str]:
     env = dict(os.environ)
@@ -181,8 +179,6 @@ def run(args: argparse.Namespace) -> None:
     write_summary(RESULTS_DIR)
 
 
-# ---------------------------------------------------------------------- összesítő
-
 
 def load_row(path: Path) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
@@ -246,8 +242,6 @@ def write_summary(results_dir: Path) -> None:
     print(table)
     print(f"\nFájlok: {results_dir / 'summary.md'}, {results_dir / 'summary.csv'}")
 
-
-# ---------------------------------------------------------------------------- main
 
 
 def main() -> None:

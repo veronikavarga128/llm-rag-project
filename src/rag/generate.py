@@ -73,8 +73,6 @@ class Generation:
     output_tokens: int
 
 
-# ------------------------------------------------------------------ prompt
-
 
 def format_context(hits: Sequence) -> str:
     """A találatok számozott forrásblokkokká alakítva (cím › szakasz + szöveg)."""
@@ -101,8 +99,6 @@ def build_plain_messages(question: str) -> list[dict]:
         {"role": "user", "content": f"Kérdés: {question}\n\nVálasz:"},
     ]
 
-
-# ------------------------------------------------------------------ Ollama
 
 
 def ollama_chat(
@@ -155,8 +151,6 @@ def ollama_chat(
     )
 
 
-# ------------------------------------------------------------------ automatikus jelek
-
 
 def normalize_answer(text: str) -> str:
     return re.sub(r"\s+", " ", text.lower()).strip()
@@ -184,8 +178,6 @@ def answer_coverage(gold_answer: str, answer: str) -> float:
         return 0.0
     return len(gold & content_stems(answer)) / len(gold)
 
-
-# ------------------------------------------------------------------ parancssor
 
 
 def main() -> None:

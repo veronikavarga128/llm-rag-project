@@ -82,8 +82,6 @@ class Result:
 Retriever = Callable[[str, int], list[Result]]
 
 
-# ----------------------------------------------------------------------- relevancia
-
 
 def norm(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
@@ -123,8 +121,6 @@ def chunk_metrics(
     }
     return recall, (1.0 / first if first else 0.0)
 
-
-# ----------------------------------------------------------------------- kiértékelés
 
 
 def evaluate(
@@ -202,8 +198,6 @@ def group_records(records: list[dict]) -> dict[str, list[dict]]:
     return groups
 
 
-# ------------------------------------------------------------------------- kiírás
-
 
 def print_table(title: str, level: str, summaries: dict[str, dict], ks: tuple[int, ...]) -> None:
     print(f"\n{title}")
@@ -257,8 +251,6 @@ def print_unanswerable(records: list[dict], miss_k: int) -> None:
         f" | nincs válasz {mean([r['top1_score'] for r in unanswerable]):.3f}"
     )
 
-
-# -------------------------------------------------------------------- Qdrant / main
 
 
 def index_by_title(chunks: list[StoredChunk]) -> dict[str, list[StoredChunk]]:

@@ -10,6 +10,7 @@ Használat a repó gyökeréből (futó Qdrant és Ollama mellett):
     python eval/run_generation_eval.py --limit 5          # gyors próba az első 5 kérdéssel
     python eval/run_generation_eval.py                    # mind az 50 kérdés
     python eval/run_generation_eval.py --model qwen2.5:3b --retriever dense --k 3
+    python eval/run_generation_eval.py --prompt balanced  # enyhébb RAG-prompt (külön fájlba ment)
     python eval/run_generation_eval.py --report-only      # csak az összesítő a mentett válaszokból
 
 A futás folytatható: a már megválaszolt (kérdés, mód) párokat nem kéri le újra.
@@ -149,6 +150,7 @@ def main() -> None:
     from rag.generate import (
         DEFAULT_MODEL,
         DEFAULT_OLLAMA_URL,
+        RAG_PROMPTS,
         OllamaError,
         build_plain_messages,
         build_rag_messages,
@@ -164,6 +166,8 @@ def main() -> None:
     parser.add_argument("--collection", default=settings.collection)
     parser.add_argument("--retriever", choices=RETRIEVER_NAMES, default="hybrid_stem5")
     parser.add_argument("--k", type=int, default=5, help="ennyi chunk kerül a promptba (alapból: 5)")
+    parser.add_argument("--prompt", choices=sorted(RAG_PROMPTS), default="strict",
+                        help="a RAG-prompt változata: strict (alap) vagy balanced")
     parser.add_argument("--num-ctx", type=int, default=4096, help="a modell kontextusablaka tokenben")
     parser.add_argument("--modes", nargs="+", choices=MODES, default=list(MODES))
     parser.add_argument("--questions", type=Path, default=QUESTIONS)
@@ -172,7 +176,10 @@ def main() -> None:
     parser.add_argument("--tag", default=None, help="a kimeneti fájlok neve (alapból a beállításokból)")
     args = parser.parse_args()
 
-    tag = args.tag or safe_name(f"{args.model}__{args.collection}__{args.retriever}__k{args.k}")
+    base_tag = f"{args.model}__{args.collection}__{args.retriever}__k{args.k}"
+    if args.prompt != "strict":
+        base_tag += f"__{args.prompt}"
+    tag = args.tag or safe_name(base_tag)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     jsonl_path, csv_path = OUT_DIR / f"{tag}.jsonl", OUT_DIR / f"{tag}.csv"
 
@@ -199,7 +206,7 @@ def main() -> None:
                     hits: list[dict] = []
                     if mode == "rag":
                         hits = retrieve(q["question"])
-                        messages = build_rag_messages(q["question"], hits_as_objects(hits))
+                        messages = build_rag_messages(q["question"], hits_as_objects(hits), args.prompt)
                     else:
                         messages = build_plain_messages(q["question"])
                     gen = ollama_chat(messages, args.model, args.ollama_url, num_ctx=args.num_ctx)

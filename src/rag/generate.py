@@ -23,12 +23,23 @@ DEFAULT_MODEL = "gemma3:4b"
 REFUSAL_TEXT = "A megadott forrásokból nem derül ki."
 PLAIN_REFUSAL_TEXT = "Nem tudom."
 
-RAG_SYSTEM_PROMPT = (
+STRICT_RAG_PROMPT = (
     "Magyar nyelvű kérdésmegválaszoló asszisztens vagy. A kérdésre kizárólag a megadott "
     "forrásszövegek alapján válaszolj, magyarul, tömören (egy-két mondatban). "
     "Ne használj a forrásokon kívüli tudást. "
     f"Ha a válasz nem derül ki a forrásokból, pontosan ezt a mondatot írd: „{REFUSAL_TEXT}”"
 )
+BALANCED_RAG_PROMPT = (
+    "Magyar nyelvű kérdésmegválaszoló asszisztens vagy. Kapsz néhány számozott forrásszöveget "
+    "és egy kérdést. Olvasd át figyelmesen az összes forrást, és ha bármelyikben szerepel a "
+    "kérdésre vonatkozó információ, válaszolj belőle magyarul, tömören (egy-két mondatban), "
+    "akkor is, ha a forrás megfogalmazása eltér a kérdésétől. A válaszhoz ne használj a "
+    "forrásokon kívüli tudást. "
+    f"Csak akkor írd pontosan ezt a mondatot: „{REFUSAL_TEXT}”, ha a források között tényleg "
+    "egyáltalán nincs a kérdésre vonatkozó információ."
+)
+RAG_PROMPTS = {"strict": STRICT_RAG_PROMPT, "balanced": BALANCED_RAG_PROMPT}
+RAG_SYSTEM_PROMPT = STRICT_RAG_PROMPT  # visszafelé kompatibilitás
 PLAIN_SYSTEM_PROMPT = (
     "Magyar nyelvű kérdésmegválaszoló asszisztens vagy. A kérdésre magyarul, tömören "
     "(egy-két mondatban) válaszolj. "
@@ -74,10 +85,12 @@ def format_context(hits: Sequence) -> str:
     return "\n\n".join(blocks)
 
 
-def build_rag_messages(question: str, hits: Sequence) -> list[dict]:
+def build_rag_messages(question: str, hits: Sequence, prompt: str = "strict") -> list[dict]:
+    if prompt not in RAG_PROMPTS:
+        raise ValueError(f"Ismeretlen prompt-változat: {prompt!r}. Lehetséges: {', '.join(RAG_PROMPTS)}")
     user = f"Források:\n\n{format_context(hits)}\n\nKérdés: {question}\n\nVálasz:"
     return [
-        {"role": "system", "content": RAG_SYSTEM_PROMPT},
+        {"role": "system", "content": RAG_PROMPTS[prompt]},
         {"role": "user", "content": user},
     ]
 

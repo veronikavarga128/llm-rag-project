@@ -104,3 +104,12 @@ def test_ollama_chat_unknown_model_suggests_pull(server):
 def test_ollama_chat_unreachable():
     with pytest.raises(OllamaError, match="Nem érem el az Ollamát"):
         ollama_chat(build_plain_messages("?"), "x", "http://127.0.0.1:9", timeout=2)
+
+
+def test_rag_prompt_variants_differ_and_unknown_fails():
+    strict = build_rag_messages("?", make_hits(), "strict")[0]["content"]
+    balanced = build_rag_messages("?", make_hits(), "balanced")[0]["content"]
+    assert strict != balanced
+    assert "A megadott forrásokból nem derül ki." in balanced
+    with pytest.raises(ValueError):
+        build_rag_messages("?", make_hits(), "ismeretlen")
